@@ -1,8 +1,8 @@
 {
     "development": {
         "username": "root",
-        "password": null,
-        "database": "eventwrite",
+        "password": "Lvs2grnd",
+        "database": "sequelize_passport",
         "dialect": "mysql",
         "host": "localhost"
     },
