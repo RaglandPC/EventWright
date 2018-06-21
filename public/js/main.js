@@ -1,54 +1,57 @@
-// Auth form//////////////////////////////
-///////////////////////////////////
 
-$(document).ready(function () {
-    var navListItems = $('div.setup-panel-3 div a'),
-        allWells = $('.setup-content-3'),
-        allNextBtn = $('.nextBtn-3'),
-        allPrevBtn = $('.prevBtn-3');
+/// main login in page//////////////////////////////////////////
 
-    allWells.hide();
-
-    navListItems.click(function (e) {
-        e.preventDefault();
-        var $target = $($(this).attr('href')),
-            $item = $(this);
-
-        if (!$item.hasClass('disabled')) {
-            navListItems.removeClass('btn-info').addClass('btn-pink');
-            $item.addClass('btn-info');
-            allWells.hide();
-            $target.show();
-            $target.find('input:eq(0)').focus();
+function validateForm() {
+    var email =  document.getElementById('email').value;
+    if (email == "") {
+        document.getElementById('status').innerHTML = "Email cannot be empty";
+        return false;
+    } else {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(!re.test(email)){
+            document.getElementById('status').innerHTML = "Email format invalid";
+            return false;
         }
-    });
+    }
+    var subject =  document.getElementById('password').value;
+    if (subject == "") {
+        document.getElementById('status').innerHTML = "Subject cannot be empty";
+        return false;
+    }
+    document.getElementById('status').innerHTML = "Sending...";
+    document.getElementById('submit').submit();
 
-    allPrevBtn.click(function(){
-        var curStep = $(this).closest(".setup-content-3"),
-            curStepBtn = curStep.attr("id"),
-            prevStepSteps = $('div.setup-panel-3 div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+}
 
-            prevStepSteps.removeAttr('disabled').trigger('click');
-    });
+/// Login for new user page////////////////
 
-    allNextBtn.click(function(){
-        var curStep = $(this).closest(".setup-content-3"),
-            curStepBtn = curStep.attr("id"),
-            nextStepSteps = $('div.setup-panel-3 div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-            curInputs = curStep.find("input[type='text'],input[type='url']"),
-            isValid = true;
+function validateForm2() {
+    var subject =  document.getElementById('first').value;
+    if (subject == "") {
+        document.getElementById('status').innerHTML = "Subject cannot be empty";
+        return false;
+    }
+    var subject =  document.getElementById('last').value;
+    if (subject == "") {
+        document.getElementById('status').innerHTML = "Subject cannot be empty";
+        return false;
+    }
+    var subject =  document.getElementById('inputAge').value;
+    if (subject == "") {
+        document.getElementById('status').innerHTML = "Subject cannot be empty";
+        return false;
+    }
+    var subject =  document.getElementById('inputCity').value;
+    if (subject == "") {
+        document.getElementById('status').innerHTML = "Subject cannot be empty";
+        return false;
+    }
+    var subject =  document.getElementById('Bio').value;
+    if (subject == "") {
+        document.getElementById('status').innerHTML = "Subject cannot be empty";
+        return false;
+    }
+    document.getElementById('status').innerHTML = "Sending...";
+    document.getElementById('submit2').submit();
 
-        $(".form-group").removeClass("has-error");
-            for(var i=0; i< curInputs.length; i++){
-                if (!curInputs[i].validity.valid){
-                    isValid = false;
-                    $(curInputs[i]).closest(".form-group").addClass("has-error");
-                }
-            }
-
-            if (isValid)
-                nextStepSteps.removeAttr('disabled').trigger('click');
-    });
-
-    $('div.setup-panel-3 div a.btn-info').trigger('click');
-});
+}
