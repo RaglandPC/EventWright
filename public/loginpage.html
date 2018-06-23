@@ -1,57 +1,111 @@
 <html>
-    <head>
-        <title>EventWright</title>
-        <!-- Font Awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
-<Link href="css/style.css" rel="stylesheet">
+
+<head>
+    <title>EventWright</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    <Link href="css/style.css" rel="stylesheet">
 
 
-    </head>
+</head>
+<!--Main Navigation-->
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../public/images/logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-md-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Navigation-->
+
     <body>
+        <div class="container mt-5 col-lg-4">
 
-<!-- Material form login -->
-<form>
-    <p class="h4 text-center mb-4">Sign in</p>
+            <section class="form-simple">
 
-    <!-- Material input email -->
-    <div class="md-form">
-        <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="email" id="materialFormLoginEmailEx" class="form-control">
-        <label for="materialFormLoginEmailEx">Your email</label>
-    </div>
+                <!--Form with header-->
+                <div class="card">
 
-    <!-- Material input password -->
-    <div class="md-form">
-        <i class="fa fa-lock prefix grey-text"></i>
-        <input type="password" id="materialFormLoginPasswordEx" class="form-control">
-        <label for="materialFormLoginPasswordEx">Your password</label>
-    </div>
+                    <!--Header-->
+                    <div class="header pt-3 grey lighten-2">
 
-    <div class="text-center mt-4">
-        <button class="btn btn-default" id="submit" type="submit">Login</button>
-    </div>
-    <div class="text-center mt-4">
-        <button class="btn btn-primary" type="submit">Register</button>
-    </div>
-</form>
-<!-- Material form login -->
+                        <div class="row d-flex justify-content-center">
+                            <h3 class="deep-grey-text mt-3 mb-4 pb-1 mx-5">Log in</h3>
+                        </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    </div>
+                    <!--Header-->
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+                    <div class="card-body mx-4 mt-4">
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                        <!--Body-->
+                        <div class="md-form">
+                            <input type="text" id="Form-email4" class="form-control">
+                            <label for="Form-email4">Your email</label>
+                        </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+                        <div class="md-form pb-3">
+                            <input type="password" id="Form-pass4" class="form-control">
+                            <label for="Form-pass4">Your password</label>
+                            <p class="font-small grey-text d-flex justify-content-end">Forgot
+                                <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
+                            </p>
+                        </div>
 
-<script type="text/javascript" src="js/main.js">
+                        <div class="text-center mb-4">
+                            <button type="button" class="btn btn-danger btn-block z-depth-2">Log in</button>
+                        </div>
+                        <p class="font-small grey-text d-flex justify-content-center">Don't have an account?
+                            <a href="#" class="dark-grey-text font-weight-bold ml-1"> Sign up</a>
+                        </p>
 
-</script>
+                    </div>
+
+                </div>
+                <!--/Form with header-->
+        </div>
+
+        </section>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+
+        <script type="text/javascript" src="js/main.js">
+
+        </script>
 
 
-</body>
+    </body>
+
 </html>
