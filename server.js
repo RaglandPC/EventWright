@@ -5,14 +5,19 @@ var session = require('express-session')
 var bodyParser = require('body-parser')
 var env = require('dotenv').load()
 var exphbs = require('express-handlebars')
-var flash = require('connect-flash');
+var flash = require('connect-flash')
 var cookieParser = require('cookie-parser')
+// var webpack = require('webpack')
+var middleware = require('webpack-dev-middleware')
+// var compiler = webpack()
 
 //For BodyParser
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
+
+app.use(express.static("app/public"));
 
 // For Passport
 app.use(session({
@@ -32,15 +37,13 @@ app.use(express.static('./app/public'));
 // }));
 // app.set('view engine', '.hbs');
 
-app.get('/', function (req, res) {
-    res.render('./main');
-});
+require("./app/routes/html-routes.js")(app);
 
 //For flash
 // app.configure(function () {
-    app.use(cookieParser('keyboard cat'));
-    app.use(session({ cookie: { maxAge: 60000 } }));
-    app.use(flash());
+app.use(cookieParser('keyboard cat'));
+app.use(session({ cookie: { maxAge: 60000 } }));
+app.use(flash());
 // });
 
 //Models
