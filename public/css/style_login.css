@@ -4,9 +4,9 @@
 }
 
 .form-simple input[type="text"]:focus:not([readonly]) {
-  border-bottom: 1px solid #ff3547;
-  -webkit-box-shadow: 0 1px 0 0 #ff3547;
-  box-shadow: 0 1px 0 0 #ff3547;
+  border-bottom: 1px solid #5987e6;
+  -webkit-box-shadow: 0 1px 0 0 #5987e6;
+  box-shadow: 0 1px 0 0 #5987e6;
 }
 
 .form-simple input[type="text"]:focus:not([readonly]) + label {
@@ -14,9 +14,9 @@
 }
 
 .form-simple input[type="password"]:focus:not([readonly]) {
-  border-bottom: 1px solid #ff3547;
-  -webkit-box-shadow: 0 1px 0 0 #ff3547;
-  box-shadow: 0 1px 0 0 #ff3547;
+  border-bottom: 1px solid #5987e6;
+  -webkit-box-shadow: 0 1px 0 0 #5987e6;
+  box-shadow: 0 1px 0 0#5987E6;
 }
 
 .form-simple input[type="password"]:focus:not([readonly]) + label {
