@@ -45,14 +45,12 @@
     <!--Main Navigation-->
 
     <body>
-        <div class="container mt-5 col-lg-4">
-
-            <section class="form-simple">
-
-                <!--Form with header-->
+         
+        <!-- Material form login -->
+        <form>
+            <div class="container mt-5 col-lg-4">
                 <div class="card">
 
-                    <!--Header-->
                     <div class="header pt-3 grey lighten-2">
 
                         <div class="row d-flex justify-content-center">
@@ -60,38 +58,36 @@
                         </div>
 
                     </div>
-                    <!--Header-->
-
-                    <div class="card-body mx-4 mt-4">
-
-                        <!--Body-->
-                        <div class="md-form">
-                            <input type="text" id="Form-email4" class="form-control">
-                            <label for="Form-email4">Your email</label>
-                        </div>
-
-                        <div class="md-form pb-3">
-                            <input type="password" id="Form-pass4" class="form-control">
-                            <label for="Form-pass4">Your password</label>
-                            <p class="font-small grey-text d-flex justify-content-end">Forgot
-                                <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
-                            </p>
-                        </div>
-
-                        <div class="text-center mb-4">
-                            <button type="button" class="btn btn-danger btn-block z-depth-2">Log in</button>
-                        </div>
-                        <p class="font-small grey-text d-flex justify-content-center">Don't have an account?
-                            <a href="#" class="dark-grey-text font-weight-bold ml-1"> Sign up</a>
-                        </p>
-
+                    <div class="card-body mx-4 mt-4"></div>
+                    <!-- Material input email -->
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" id="email" class="form-control">
+                        <label for="materialFormLoginEmailEx">Your email</label>
                     </div>
 
-                </div>
-                <!--/Form with header-->
-        </div>
+                    <!-- Material input password -->
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" id="password" class="form-control">
+                        <label for="materialFormLoginPasswordEx">Your password</label>
+                        <p class="font-small grey-text d-flex justify-content-end">Forgot
+                                <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
+                            </p>
+                    </div>
 
-        </section>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+                </div>
+                <p class="font-small grey-text d-flex justify-content-center">Don't have an account?
+                        <a href="#" class="dark-grey-text font-weight-bold ml-1"> Sign up</a>
+                    </p>
+
+                </div>
+            </div>
+        </form>
+        <!-- Material form login -->
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
