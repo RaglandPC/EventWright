@@ -5,14 +5,19 @@ var session = require('express-session')
 var bodyParser = require('body-parser')
 var env = require('dotenv').load()
 var exphbs = require('express-handlebars')
-var flash = require('connect-flash');
+var flash = require('connect-flash')
 var cookieParser = require('cookie-parser')
+// var webpack = require('webpack')
+var middleware = require('webpack-dev-middleware')
+// var compiler = webpack()
 
 //For BodyParser
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
+
+app.use(express.static("app/public"));
 
 // For Passport
 app.use(session({
@@ -25,22 +30,20 @@ app.use(passport.session()); // persistent login sessions
 
 app.use(express.static('./app/public'));
 
-//For Handlebars
-app.set('views', './app/views')
-app.engine('hbs', exphbs({
-    extname: '.hbs'
-}));
-app.set('view engine', '.hbs');
+// //For Handlebars
+// app.set('views', './app/views')
+// app.engine('hbs', exphbs({
+//     extname: '.hbs'
+// }));
+// app.set('view engine', '.hbs');
 
-app.get('/', function (req, res) {
-    res.send('Welcome to Passport with Sequelize');
-});
+require("./app/routes/html-routes.js")(app);
 
 //For flash
 // app.configure(function () {
-    app.use(cookieParser('keyboard cat'));
-    app.use(session({ cookie: { maxAge: 60000 } }));
-    app.use(flash());
+app.use(cookieParser('keyboard cat'));
+app.use(session({ cookie: { maxAge: 60000 } }));
+app.use(flash());
 // });
 
 //Models
