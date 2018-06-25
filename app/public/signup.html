@@ -68,7 +68,7 @@
                             <!--Header-->
                             <div class="card-body">
                                 <!-- Extended default form grid -->
-                                <form>
+                                <form id="signup" name="signup" method="post" action="/signup">
                                     <!-- Grid row -->
                                     <div class="form-row">
 
@@ -98,12 +98,13 @@
                                         <!-- Default input -->
                                         <div class="form-group col-md-6">
                                             <label for="inputFirst">First</label>
-                                            <input type="text" class="form-control" id="first" placeholder="First">
+                                            <input type="text" class="form-control" id="first"
+                                             name="firstname" placeholder="First">
                                         </div>
                                         <!-- Default input -->
                                         <div class="form-group col-md-6">
                                             <label for="inputLast">Last</label>
-                                            <input type="text" class="form-control" id="last" placeholder="Last">
+                                            <input type="text" class="form-control" id="last" name="lastname" placeholder="Last">
                                         </div>
                                     </div>
                                     <!-- Grid row -->
