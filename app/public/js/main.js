@@ -14,19 +14,24 @@ function validateForm() {
             return false;
         }
     }
-    var subject =  document.getElementById('pass').value;
-    if (subject == "") {
+    var password =  document.getElementById('password').value;
+    if (password == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
     document.getElementById('status').innerText = "Sending...";
     document.getElementById('submit').submit();
-
+console.log(password);
 }
 
 /// Login for new user page////////////////
 
 function validateForm2() {
+    var picture=  document.getElementById('file').value;
+    if (picture == "") {
+        document.getElementById('status').innerText = "Subject cannot be empty";
+        return false;
+    }
     var email =  document.getElementById('email').value;
     if (email == "") {
         document.getElementById('status').innerText = "Email cannot be empty";
@@ -68,7 +73,22 @@ function validateForm2() {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    document.getElementById('status').innerHTML = "Sending...";
+    document.getElementById('status').innerText = "Sending...";
     document.getElementById('submit2').submit();
 
 }
+
+//img uplaod
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+  
+      reader.onload = function (e) {
+        $('#blah')
+          .attr('src', e.target.result);
+      };
+  
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
