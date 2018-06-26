@@ -27,7 +27,7 @@ console.log(password);
 /// Login for new user page////////////////
 
 function validateForm2() {
-    var picture=  document.getElementById('file').value;
+    var picture =  document.getElementById('file').value;
     if (picture == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
