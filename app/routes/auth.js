@@ -7,21 +7,21 @@ module.exports = function (app, passport) {
     app.get('/signin', authController.signin);
 
     app.post('/signup', passport.authenticate('local-signup', {
-        successRedirect: '/dashboard',
+        successRedirect: '/chatroom',
         failureRedirect: '/signup',
         failureFlash: true
     }
     ));
 
     app.post('/signin', passport.authenticate('local-signin', {
-        successRedirect: '/dashboard',
+        successRedirect: '/chatroom',
         failureRedirect: '/signin',
         failureFlash: 'Invalid username or password.' 
     }
 
     ));
 
-    app.get('/dashboard', isLoggedIn, authController.dashboard);
+    app.get('/chatroom', isLoggedIn, authController.dashboard);
 
     app.get('/logout', authController.logout);
 
@@ -30,8 +30,6 @@ module.exports = function (app, passport) {
             return next();
         res.redirect('/signin');
     }
-
-
 
 }
 
