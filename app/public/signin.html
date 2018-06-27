@@ -2,13 +2,16 @@
 
 <head>
     <title>EventWright</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:900" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
-    <Link href="css/style_login.css" rel="stylesheet">
+    <Link href="css/style.css" rel="stylesheet">
 
 
 </head>
@@ -17,8 +20,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png">
+            <a class="navbar-brand" href="../public/index.html">
+                <img src="images/navbar_logo.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +29,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-md-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                    <li class="nav-item">
+                        <a class="nav-link" href="../public/index.html">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="../public/signup.html">Sign up</a>
                     </li>
                 </ul>
             </div>
@@ -45,48 +45,53 @@
     <!--Main Navigation-->
 
     <body>
-         
-        <!-- Material form login -->
-        <form id="signin" name="signin" method="post" action="/signin">
-            <div class="container mt-5 col-lg-4">
-                <div class="card">
+        <div class="view intro-2">
+            <div class="full-bg-img">
+                <!-- Material form login -->
+                <form id="signin" name="signin" method="post" action="/signin">
+                    <div class="container mt-5 col-lg-4">
+                        <div class="card">
 
-                    <div class="header pt-3 grey lighten-2">
+                            <div class="header pt-3 grey lighten-2">
 
-                        <div class="row d-flex justify-content-center">
-                            <h3 class="deep-grey-text mt-3 mb-4 pb-1 mx-5">Log in</h3>
+                                <div class="row d-flex justify-content-center">
+                                    <h3 class="deep-grey-text mt-3 mb-4 pb-1 mx-5">Sign in</h3>
+                                </div>
+
+                            </div>
+                            <div class="card-body mx-3">
+                                <!-- Material input email -->
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix grey-text"></i>
+                                    <input type="email" id="email" class="form-control" name="email">
+                                    <label for="materialFormLoginEmailEx">Your email</label>
+                                </div>
+
+                                <!-- Material input password -->
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix grey-text"></i>
+                                    <input type="password" id="password" class="form-control" name="password">
+                                    <label for="materialFormLoginPasswordEx">Your password</label>
+                                    <p class="font-small grey-text d-flex justify-content-end">Forgot
+                                        <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
+                                    </p>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary" type="submit" href="../public/chatroom.html">Login</button>
+                                </div>
+                            </div>
                         </div>
-
+                        <br>
+                        <p class="font-small white-text d-flex justify-content-center">Don't have an account?
+                            <a href="signup.html" class="white-text font-weight-bold ml-1"> Sign up</a>
+                        </p>
                     </div>
-                    <div class="card-body mx-4 mt-4"></div>
-                    <!-- Material input email -->
-                    <div class="md-form">
-                        <i class="fa fa-envelope prefix grey-text"></i>
-                        <input type="email" id="email" class="form-control" name="email">
-                        <label for="materialFormLoginEmailEx">Your email</label>
-                    </div>
-
-                    <!-- Material input password -->
-                    <div class="md-form">
-                        <i class="fa fa-lock prefix grey-text"></i>
-                        <input type="password" id="password" class="form-control" name="password">
-                        <label for="materialFormLoginPasswordEx">Your password</label>
-                        <p class="font-small grey-text d-flex justify-content-end">Forgot
-                                <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
-                            </p>
-                    </div>
-
-                    <div class="text-center mt-4">
-                        <button class="btn btn-primary" type="submit">Login</button>
-                    </div>
-                </div>
-                <p class="font-small grey-text d-flex justify-content-center">Don't have an account?
-                        <a href="signup.html" class="dark-grey-text font-weight-bold ml-1"> Sign up</a>
-                    </p>
-
-                </div>
             </div>
-        </form>
+            </form>
+        </div>
+        </div>
+
         <!-- Material form login -->
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
