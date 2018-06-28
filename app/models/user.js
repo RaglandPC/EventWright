@@ -25,7 +25,13 @@ module.exports = function(sequelize, Sequelize) {
         about: {
             type: Sequelize.TEXT
         },
- 
+        city: {
+            type: Sequelize.TEXT
+        },
+        age: {
+            type: Sequelize.TEXT
+        },
+        
         email: {
             type: Sequelize.STRING,
             validate: {

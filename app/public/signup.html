@@ -78,7 +78,7 @@
                                             </div>
                                             <div class="d-flex justify-content-center">
                                                 <div class="btn btn-mdb-color btn-rounded float-left">
-                                                    <input type="file" name="file" id="file" class="inputfile" onchange="readURL(this);" />
+                                                    <input required type="file" name="file" id="file" class="inputfile" onchange="readURL(this);" />
                                                     <label for="file">Upload an Image</label>
                                                 </div>
                                             </div>
@@ -87,24 +87,24 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="inputFirst">Email</label>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                            <input required type="email" class="form-control" id="email" name="email" placeholder="Email">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="inputFirst">Password</label>
-                                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                                            <input required type="password" class="form-control" name="password" id="password" placeholder="Password">
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <!-- Default input -->
                                         <div class="form-group col-md-6">
                                             <label for="inputFirst">First</label>
-                                            <input type="text" class="form-control" id="first"
+                                            <input required type="text" class="form-control" id="first"
                                              name="firstname" placeholder="First">
                                         </div>
                                         <!-- Default input -->
                                         <div class="form-group col-md-6">
                                             <label for="inputLast">Last</label>
-                                            <input type="text" class="form-control" id="last" name="lastname" placeholder="Last">
+                                            <input required type="text" class="form-control" id="last" name="lastname" placeholder="Last">
                                         </div>
                                     </div>
                                     <!-- Grid row -->
@@ -112,19 +112,19 @@
                                     <!-- Default input -->
                                     <div class="form-group">
                                         <label for="inputAge">Age</label>
-                                        <input type="text" class="form-control" id="inputAge" placeholder="Age">
+                                        <input required type="text" class="form-control" id="inputAge" placeholder="Age" name="age">
                                     </div>
                                     <!-- Grid row -->
                                     <div class="form-row">
                                         <!-- Default input -->
                                         <div class="form-group col-md-6">
                                             <label for="inputCity">City</label>
-                                            <input type="text" class="form-control" id="inputCity" placeholder="Kansascity">
+                                            <input required type="text" class="form-control" id="inputCity" placeholder="Kansascity"  name="city">
                                         </div>
                                         <!-- Default input -->
                                         <div class="form-group col-md-6">
                                             <label for="exampleFormControlTextarea2">Bio</label>
-                                            <textarea class="form-control rounded-0" id="Bio" rows="3"></textarea>
+                                            <textarea required class="form-control rounded-0" id="Bio" rows="3" name="bio"></textarea>
                                         </div>
                                     </div>
                                     <!-- Grid row -->

@@ -43,33 +43,33 @@ function validateForm2() {
             return false;
         }
     }
-    var subject =  document.getElementById('password').value;
-    if (subject == "") {
+    var password =  document.getElementById('password').value;
+    if (password == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    var subject =  document.getElementById('first').value;
-    if (subject == "") {
+    var first =  document.getElementById('first').value;
+    if (first == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    var subject =  document.getElementById('last').value;
-    if (subject == "") {
+    var last =  document.getElementById('last').value;
+    if (last == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    var subject =  document.getElementById('inputAge').value;
-    if (subject == "") {
+    var age =  document.getElementById('inputAge').value;
+    if (age == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    var subject =  document.getElementById('inputCity').value;
-    if (subject == "") {
+    var city =  document.getElementById('inputCity').value;
+    if (city == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    var subject =  document.getElementById('Bio').value;
-    if (subject == "") {
+    var bio =  document.getElementById('Bio').value;
+    if (bio == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
