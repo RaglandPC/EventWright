@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Passport with Sequelize</title>
+    <title>EventWrite</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:900" rel="stylesheet">
     <!-- Font Awesome -->
@@ -33,13 +33,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-md-auto">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalQuickView">
+                        <i class="fas fa-plus"></i>&nbspCreate Group</button>
                     <li class="nav-item">
-                        <a class="nav-link" href="../public/signin.html">Sign in
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../public/signup.html">Sign up</a>
+                        <p>Welcome, user
+                            <img src="../public/images/avatar.png" class="rounded-circle" width="32px">
+                        </p>
+
                     </li>
                 </ul>
             </div>
@@ -50,8 +50,165 @@
 <!-- Main Navigation -->
 
 <body>
-    <h2>Dashboard</h2>
-    <h5>Hurray! you are logged in.</h5>
+    <div class="view intro-2">
+        <div class="full-bg-img">
+            <!--Main layout-->
+
+            <div class="container">
+
+                <div class="card justify-content-center">
+                    <div class="card-body">
+                        <!-- Heading -->
+                        <div class="card mb-4 wow fadeIn">
+
+                            <!--Card content-->
+                            <div class="card-body d-sm-flex justify-content-between">
+
+                                <h4 class="mb-2 mb-sm-0 pt-1">
+                                    Group Name
+                                </h4>
+
+                                <form class="d-flex justify-content-center">
+                                    <!-- Default input -->
+                                    <input type="search" placeholder="Search groups" aria-label="Search" class="form-control">
+                                    <button class="btn btn-primary btn-sm my-0 p" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+                        <!-- Heading -->
+
+                        <!--Grid row-->
+                        <div class="row wow fadeIn">
+
+                            <!--Grid column-->
+                            <div class="col-md-9 mb-2">
+
+                                <!--Card-->
+                                <div class="card">
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+                                        <canvas id="LocationPic"></canvas>
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!-- Google Maps Section -->
+                            <!--Grid column-->
+                            <div class="col-md-3 mb-4">
+
+                                <!--Card-->
+                                <div class="card mb-4">
+
+                                    <!-- Card header -->
+                                    <div class="card-header text-center">
+                                        <i class="fas fa-map-marker-alt"></i>&nbsp Location
+                                    </div>
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+
+                                        <canvas id="GoogleMap"></canvas>
+
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!--Grid column-->
+                        </div>
+
+
+                        <!--Grid row-->
+                        <div class="row wow fadeIn">
+
+                            <!--Grid column-->
+                            <div class="col-md-9 mb-2">
+
+                                <!--Card-->
+                                <div class="card">
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+                                        <div class="chatArea">
+                                            <h5>This is where the chat content goes</h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!-- Google Maps Section -->
+                            <!--Grid column-->
+                            <div class="col-md-3 mb-4">
+
+                                <!--Card-->
+                                <div class="card mb-4">
+
+                                    <!-- Card header -->
+                                    <div class="card-header text-center">
+                                        <i class="fas fa-users"></i>&nbsp Friends
+                                        <form class="d-flex justify-content-center">
+
+                                            <!-- Default input -->
+                                            <input type="search" placeholder="Search" aria-label="Search" class="form-control">
+                                            <button class="btn btn-primary btn-sm my-0 p" type="submit">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+
+                                        </form>
+                                    </div>
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+
+                                        <canvas id="GoogleMap"></canvas>
+
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!--Grid column-->
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small wow fadeIn">
+
+        <!--Copyright-->
+        <div class="footer-copyright pt-2">
+            <strong>© 2018&nbspEventWright</strong>
+            <p>Made with&nbsp;
+                <i class="fas fa-heart"></i>&nbsp by Jake, JD, Christian & Ben </a>
+            </p>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

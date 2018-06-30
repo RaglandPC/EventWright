@@ -5,6 +5,15 @@ body,
   height: 100%;
 }
 
+.card {
+  box-shadow: none;
+}
+
+.btn-secondary {
+  background: #5987e6 !important;
+  color: #fff !important;
+}
+
 @media (max-width: 768px) {
   .btn {
     width: 100%;
