@@ -1,3 +1,43 @@
+.view {
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #5b86e5,
+    #36d1dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #5b86e5,
+    #36d1dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .view {
+    overflow: visible;
+    margin-top: -56px;
+  }
+}
+.navbar {
+  z-index: 1;
+}
+.navbar {
+  background-color: white;
+}
+.top-nav-collapse {
+  background-color: white;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: white;
+  }
+}
+
+a.nav {
+  color: #5987e6;
+}
+
 .form-simple .header {
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;

@@ -6,18 +6,23 @@ body,
 }
 
 @media (max-width: 768px) {
-  .btn .btn-outline-white .btn-lg {
+  .btn {
     width: 100%;
   }
 }
 
-p {
+body {
   font-family: "Open Sans", sans-serif;
 }
 
 h1 {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
+}
+
+.h3 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(70, 18, 153);
 }
 
 /* Navbar animation */
