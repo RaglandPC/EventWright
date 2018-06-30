@@ -22,3 +22,8 @@
 .form-simple input[type="password"]:focus:not([readonly]) + label {
   color: #4f4f4f;
 }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1c2331;
+}

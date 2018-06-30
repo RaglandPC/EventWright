@@ -1,0 +1,53 @@
+html,
+body,
+.view {
+  height: 100%;
+}
+
+.view {
+  padding-top: 100px;
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #623995,
+    #39aade
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #623995,
+    #39aade
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .view {
+    overflow: visible;
+    margin-top: -56px;
+  }
+}
+.navbar {
+  z-index: 1;
+}
+.navbar {
+  background-color: white;
+  box-shadow: none;
+}
+.top-nav-collapse {
+  background-color: white;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: white;
+  }
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: #4353b3;
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1c2331;
+}
