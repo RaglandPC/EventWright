@@ -15,7 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
-    <Link href="css/chatroom.css" rel="stylesheet">
+    <Link href="css/profile.css" rel="stylesheet">
 </head>
 
 <!-- Main Navigation -->
@@ -74,141 +74,89 @@
             <!--Main layout-->
 
             <div class="container">
-
-                <div class="card ">
-
-                    <div class="card-body">
-                        <!-- Heading -->
-                        <div class="card mb-4 wow fadeIn">
-
-                        </div>
-                        <!-- Heading -->
-
-                        <!--Grid row-->
-                        <div class="row wow fadeIn">
-
-                            <!--Grid column-->
-                            <div class="col-md-9 mb-2">
-                                <!-- Chat column -->
-
-                                <!--Card-->
-                                <div class="card">
-
-                                    <!--Card content-->
-                                    <div class="card-body">
-                                        <div class="chatArea">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="container">
-                                                        <img src="/w3images/bandmember.jpg" alt="Avatar">
-                                                        <p>Hello. How are you today?</p>
-                                                        <span class="time-right">11:00</span>
-                                                    </div>
-
-                                                    <div class="container">
-                                                        <img src="../public/images/avatar.png" alt="Avatar" width="32">
-                                                        <p>Hello. How are you today?</p>
-                                                        <span class="time-right">11:00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--/.Card-->
-                                <!-- End Chat column -->
-
+                <div class="row profile">
+                    <div class="col-md-3">
+                        <div class="profile-sidebar">
+                            <!-- SIDEBAR USERPIC -->
+                            <div class="profile-userpic">
+                                <img src="../public/images/avatar.png" class="img-responsive" alt="">
                             </div>
-                            <!--Grid column-->
-
-                            <!-- Google Maps Section -->
-                            <!--Grid column-->
-                            <div class="col-md-3 mb-4">
-
-                                <!--Card-->
-                                <div class="card mb-4">
-
-                                    <!-- Card header -->
-                                    <div class="card-header text-center">
-                                        <i class="fas fa-map-marker-alt"></i>&nbsp Location
-                                    </div>
-
-                                    <!--Card content-->
-                                    <div class="card-body">
-
-                                        <canvas id="GoogleMap"></canvas>
-
-                                    </div>
-
+                            <!-- END SIDEBAR USERPIC -->
+                            <!-- SIDEBAR USER TITLE -->
+                            <div class="profile-usertitle">
+                                <div class="profile-usertitle-name">
+                                    User Name
                                 </div>
-                                <!--/.Card-->
                             </div>
-                            <!--Grid column-->
-                        </div>
+                            <br>
+                            <!-- END SIDEBAR USER TITLE -->
+                            <!-- SIDEBAR BUTTONS -->
 
+                            <!-- END SIDEBAR BUTTONS -->
+                            <!-- SIDEBAR MENU -->
 
-                        <!--Grid row-->
-                        <div class="row wow fadeIn">
-
-
-                            <!-- Google Maps Section -->
-                            <!--Grid column-->
-                            <div class="col-md-3 mb-4 hidden-sm">
-
-                                <!--Card-->
-                                <div class="card mb-4">
-
-                                    <!-- Card header -->
-                                    <div class="card-header text-center">
-                                        <i class="fas fa-users"></i>&nbsp Friends
-                                        <form class="d-flex justify-content-center">
-
-                                            <!-- Default input -->
-                                            <input type="search" placeholder="Search" aria-label="Search" class="form-control">
-                                            <button class="btn btn-primary btn-sm my-0 p" type="submit">
-                                                <i class="fa fa-search"></i>
-                                            </button>
-
-                                        </form>
+                            <div class="form-row">
+                                <div class="file-field">
+                                    <div class="col col-sm-6">
+                                        <input type="file" name="file" id="file" class="inputfile" onchange="readURL(this);" />
+                                        <label for="file">
+                                            <small>Upload an Image</small>
+                                        </label>
                                     </div>
-
-                                    <!--Card content-->
-                                    <div class="card-body">
-
-                                        <canvas id="GoogleMap"></canvas>
-
-                                    </div>
-
                                 </div>
-                                <!--/.Card-->
                             </div>
-                            <!--Grid column-->
+
+                            <div class="profile-usermenu">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            Link 1 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END MENU -->
                         </div>
-
-
-
-
-
                     </div>
-
+                    <div class="col-md-9">
+                        <div class="profile-content">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="content-1">
+                                        profile content 1
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="content-2">
+                                        profile content 2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
+
+
         </div>
-        <!--Footer-->
-        <footer class="page-footer text-center font-small wow fadeIn">
+    </div>
+    <!--Footer-->
+    <footer class="page-footer text-center font-small wow fadeIn">
 
-            <!--Copyright-->
-            <div class="footer-copyright pt-2">
-                <strong>© 2018&nbspEventWright</strong>
-                <p>Made with&nbsp;
-                    <i class="fas fa-heart"></i>&nbsp by Jake, JD, Christian & Ben </a>
-                </p>
-            </div>
-            <!--/.Copyright-->
+        <!--Copyright-->
+        <div class="footer-copyright pt-2">
+            <strong>© 2018&nbspEventWright</strong>
+            <p>Made with&nbsp;
+                <i class="fas fa-heart"></i>&nbsp by Jake, JD, Christian & Ben </a>
+            </p>
+        </div>
+        <!--/.Copyright-->
 
-        </footer>
-        <!--/.Footer-->
+    </footer>
+    <!--/.Footer-->
     </div>
 
 
