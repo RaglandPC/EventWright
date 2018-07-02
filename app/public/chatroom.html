@@ -31,19 +31,37 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-md-auto">
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalQuickView">
-                        <i class="fas fa-plus"></i>&nbspCreate Group</button>
-                    <li class="nav-item">
-                        <p>Welcome, user
-                            <img src="../public/images/avatar.png" class="rounded-circle" width="32px">
-                        </p>
-
+            <div class="header-rightside">
+                <ul class="list-inline header-top pull-right">
+                    <li class="hidden-xs">
+                        <a href="#" class="add-event" data-toggle="modal" data-target="#add_event">
+                            <i class="fas fa-plus text-white"></i>&nbspAdd Event</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="../public/images/avatar.png" alt="user">
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="navbar-content">
+                                    <p class="text-muted small">
+                                        <i class="fas fa-user"></i> Profile
+                                    </p>
+                                    <div class="divider">
+                                        <p class="text-muted small">
+                                            <i class="fas fa-sign-out-alt"></i> Log out
+                                        </p>
+                                        <div class="divider">
+                                        </div>
+                                        <a href="#" class="view btn-sm active">View Profile</a>
+                                    </div>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
+                </div>
             </div>
-        </div>
     </nav>
 </header>
 
@@ -56,28 +74,13 @@
 
             <div class="container">
 
-                <div class="card justify-content-center">
+                <div class="card ">
+                    <div class="card-header">
+                        Event Title
+                    </div>
                     <div class="card-body">
                         <!-- Heading -->
                         <div class="card mb-4 wow fadeIn">
-
-                            <!--Card content-->
-                            <div class="card-body d-sm-flex justify-content-between">
-
-                                <h4 class="mb-2 mb-sm-0 pt-1">
-                                    Group Name
-                                </h4>
-
-                                <form class="d-flex justify-content-center">
-                                    <!-- Default input -->
-                                    <input type="search" placeholder="Search groups" aria-label="Search" class="form-control">
-                                    <button class="btn btn-primary btn-sm my-0 p" type="submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-
-                                </form>
-
-                            </div>
 
                         </div>
                         <!-- Heading -->
@@ -87,17 +90,35 @@
 
                             <!--Grid column-->
                             <div class="col-md-9 mb-2">
+                                <!-- Chat column -->
 
                                 <!--Card-->
                                 <div class="card">
 
                                     <!--Card content-->
                                     <div class="card-body">
-                                        <canvas id="LocationPic"></canvas>
+                                        <div class="chatArea">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="container">
+                                                        <img src="/w3images/bandmember.jpg" alt="Avatar">
+                                                        <p>Hello. How are you today?</p>
+                                                        <span class="time-right">11:00</span>
+                                                    </div>
+
+                                                    <div class="container">
+                                                        <img src="../public/images/avatar.png" alt="Avatar" width="32">
+                                                        <p>Hello. How are you today?</p>
+                                                        <span class="time-right">11:00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
                                 <!--/.Card-->
+                                <!-- End Chat column -->
 
                             </div>
                             <!--Grid column-->
@@ -131,28 +152,10 @@
                         <!--Grid row-->
                         <div class="row wow fadeIn">
 
-                            <!--Grid column-->
-                            <div class="col-md-9 mb-2">
-
-                                <!--Card-->
-                                <div class="card">
-
-                                    <!--Card content-->
-                                    <div class="card-body">
-                                        <div class="chatArea">
-                                            <h5>This is where the chat content goes</h5>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--/.Card-->
-
-                            </div>
-                            <!--Grid column-->
 
                             <!-- Google Maps Section -->
                             <!--Grid column-->
-                            <div class="col-md-3 mb-4">
+                            <div class="col-md-3 mb-4 hidden-sm">
 
                                 <!--Card-->
                                 <div class="card mb-4">

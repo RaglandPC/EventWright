@@ -51,3 +51,79 @@ h3 {
 .page-footer {
   background-color: #1c2331;
 }
+
+.header-top img {
+  border-radius: 50%;
+  max-width: 48px !important;
+  width: 100%;
+}
+
+.add-event {
+  background: #5584ff none repeat scroll 0 0;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 27px 10px 27px;
+  position: relative;
+}
+
+.header-rightside .nav > li > a:focus,
+.header-rightside .nav > li > a:hover {
+  background: none;
+  text-decoration: none;
+}
+
+.add-project::before {
+  background: rgba(0, 0, 0, 0) url("../images/plus.png") no-repeat scroll 0 0;
+  content: "";
+  height: 12px;
+  left: 17px;
+  position: absolute;
+  top: 12px;
+  width: 12px;
+}
+
+.add-project:hover {
+  color: #ffffff;
+}
+
+.header-top i {
+  color: #0e1a35;
+}
+
+.icon-info {
+  position: relative;
+}
+.navi i {
+  font-size: 20px;
+}
+.label.label-primary {
+  border-radius: 50%;
+  font-size: 9px;
+  left: 8px;
+  position: absolute;
+  top: -9px;
+}
+
+.icon-info .label {
+  border: 2px solid #ffffff;
+  font-weight: 500;
+  padding: 3px 5px;
+  text-align: center;
+}
+
+.header-top li {
+  display: inline-block;
+  text-align: center;
+}
+
+.header-top .dropdown-toggle {
+  color: #0e1a35;
+}
+
+.header-top .dropdown-menu {
+  border: medium none;
+  left: -85px;
+  padding: 17px;
+}

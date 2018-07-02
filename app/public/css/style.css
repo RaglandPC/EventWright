@@ -16,7 +16,6 @@
 @media (min-width: 768px) {
   .view {
     overflow: visible;
-    margin-top: -56px;
   }
 }
 .navbar {
@@ -37,7 +36,21 @@
 
 h3 {
   font-family: "Raleway", sans-serif;
-  color: #4353b3;
+  color: #2977d0;
+}
+
+i {
+  color: #2977d0;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #2977d0; /* green */
+  border-radius: 50%;
+}
+
+.card-top {
+  background-color: #36d1dc;
 }
 
 /* Form */
