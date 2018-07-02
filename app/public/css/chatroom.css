@@ -41,6 +41,10 @@ body,
   }
 }
 
+.card {
+  box-shadow: none;
+}
+
 .navbar-content {
   text-align: left;
 }

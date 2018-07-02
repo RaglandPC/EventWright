@@ -34,6 +34,10 @@
   }
 }
 
+.card {
+  box-shadow: none;
+}
+
 h3 {
   font-family: "Raleway", sans-serif;
   color: #2977d0;
@@ -41,6 +45,10 @@ h3 {
 
 .fa-heart {
   color: #ee3847;
+}
+
+.blue-gradient {
+  background-image: linear-gradient(to bottom, #39aade 15%, #2977d0 100%);
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
