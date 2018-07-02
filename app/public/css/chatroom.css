@@ -6,17 +6,7 @@ body,
 
 .view {
   padding-top: 50px;
-  background: #36d1dc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #623995,
-    #39aade
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #623995,
-    #39aade
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3497f0; /* fallback for old browsers */
 
   background-size: cover;
 }
