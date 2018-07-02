@@ -16,7 +16,6 @@
 @media (min-width: 768px) {
   .view {
     overflow: visible;
-    margin-top: -56px;
   }
 }
 .navbar {
@@ -36,6 +35,10 @@
 
 a.nav {
   color: #5987e6;
+}
+
+.fa-heart {
+  color: #ee3847;
 }
 
 .form-simple .header {

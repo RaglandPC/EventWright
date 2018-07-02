@@ -5,7 +5,7 @@ body,
 }
 
 .view {
-  padding-top: 100px;
+  padding-top: 50px;
   background: #36d1dc; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -23,7 +23,6 @@ body,
 @media (min-width: 768px) {
   .view {
     overflow: visible;
-    margin-top: -56px;
   }
 }
 .navbar {
@@ -40,6 +39,15 @@ body,
   .navbar {
     background-color: white;
   }
+}
+
+.navbar-content {
+  text-align: left;
+}
+
+.header-top .dropdown-menu {
+  background-color: #2977d0;
+  color: white;
 }
 
 h3 {

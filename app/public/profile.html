@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EventWrite</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:900" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+  <Link href="css/chatroom.css" rel="stylesheet">
+</head>
+
+<!-- Main Navigation -->
+
+<header>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="../public/index.html">
+        <img src="images/navbar_logo.png">
+      </a>
+
+      <div class="header-rightside">
+        <ul class="list-inline header-top pull-right">
+          <li class="d-none d-sm-inline mr-3">
+            <a href="#" class="add-event" data-toggle="modal" data-target="#add_event">
+              <i class="fas fa-plus text-white"></i>
+              <small>&nbspCreate Event</small>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../public/images/avatar.png" alt="user">
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="navbar-content">
+                  <p class="text-muted small white-text">
+                    <i class="fas fa-plus white-text">
+                    </i> Create event
+                  </p>
+
+                  <p class="text-muted small white-text">
+                    <i class="fas fa-user white-text"></i> Profile
+                  </p>
+
+                  <p class="text-muted small white-text">
+                    <i class="fas fa-sign-out-alt white-text"></i> Log out
+                  </p>
+
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+      </div>
+  </nav>
+</header>
+
+<!-- Main Navigation -->
+
+<body>
+  <div class="view intro-2">
+    <div class="full-bg-img">
+      <!--Main layout-->
+
+      <div class="container">
+
+        <div class="card ">
+
+          <div class="card-body">
+            <!-- Heading -->
+            <div class="card mb-4 wow fadeIn">
+
+            </div>
+            <!-- Heading -->
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+              <!--Grid column-->
+              <div class="col-md-9 mb-2">
+                <!-- Chat column -->
+
+                <!--Card-->
+                <div class="card">
+
+                  <!--Card content-->
+                  <div class="card-body">
+                    <div class="chatArea">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="container">
+                            <img src="/w3images/bandmember.jpg" alt="Avatar">
+                            <p>Hello. How are you today?</p>
+                            <span class="time-right">11:00</span>
+                          </div>
+
+                          <div class="container">
+                            <img src="../public/images/avatar.png" alt="Avatar" width="32">
+                            <p>Hello. How are you today?</p>
+                            <span class="time-right">11:00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!--/.Card-->
+                <!-- End Chat column -->
+
+              </div>
+              <!--Grid column-->
+
+              <!-- Google Maps Section -->
+              <!--Grid column-->
+              <div class="col-md-3 mb-4">
+
+                <!--Card-->
+                <div class="card mb-4">
+
+                  <!-- Card header -->
+                  <div class="card-header text-center">
+                    <i class="fas fa-map-marker-alt"></i>&nbsp Location
+                  </div>
+
+                  <!--Card content-->
+                  <div class="card-body">
+
+                    <canvas id="GoogleMap"></canvas>
+
+                  </div>
+
+                </div>
+                <!--/.Card-->
+              </div>
+              <!--Grid column-->
+            </div>
+
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+
+              <!-- Google Maps Section -->
+              <!--Grid column-->
+              <div class="col-md-3 mb-4 hidden-sm">
+
+                <!--Card-->
+                <div class="card mb-4">
+
+                  <!-- Card header -->
+                  <div class="card-header text-center">
+                    <i class="fas fa-users"></i>&nbsp Friends
+                    <form class="d-flex justify-content-center">
+
+                      <!-- Default input -->
+                      <input type="search" placeholder="Search" aria-label="Search" class="form-control">
+                      <button class="btn btn-primary btn-sm my-0 p" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+
+                    </form>
+                  </div>
+
+                  <!--Card content-->
+                  <div class="card-body">
+
+                    <canvas id="GoogleMap"></canvas>
+
+                  </div>
+
+                </div>
+                <!--/.Card-->
+              </div>
+              <!--Grid column-->
+            </div>
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="page-footer text-center font-small wow fadeIn">
+
+      <!--Copyright-->
+      <div class="footer-copyright pt-2">
+        <strong>© 2018&nbspEventWright</strong>
+        <p>Made with&nbsp;
+          <i class="fas fa-heart"></i>&nbsp by Jake, JD, Christian & Ben </a>
+        </p>
+      </div>
+      <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+  </div>
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+
+  <script type="text/javascript" src="js/main.js">
+
+  </script>
+
+</body>
+
+</html>

@@ -24,18 +24,17 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../public/index.html">
                 <img src="images/navbar_logo.png">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
             <div class="header-rightside">
                 <ul class="list-inline header-top pull-right">
-                    <li class="hidden-xs">
+                    <li class="d-none d-sm-inline mr-3">
                         <a href="#" class="add-event" data-toggle="modal" data-target="#add_event">
-                            <i class="fas fa-plus text-white"></i>&nbspAdd Event</a>
+                            <i class="fas fa-plus text-white"></i>
+                            <small>&nbspCreate Event</small>
+                        </a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -45,17 +44,19 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="navbar-content">
-                                    <p class="text-muted small">
-                                        <i class="fas fa-user"></i> Profile
+                                    <p class="text-muted small white-text">
+                                        <i class="fas fa-plus white-text">
+                                        </i> Create event
                                     </p>
-                                    <div class="divider">
-                                        <p class="text-muted small">
-                                            <i class="fas fa-sign-out-alt"></i> Log out
-                                        </p>
-                                        <div class="divider">
-                                        </div>
-                                        <a href="#" class="view btn-sm active">View Profile</a>
-                                    </div>
+
+                                    <p class="text-muted small white-text">
+                                        <i class="fas fa-user white-text"></i> Profile
+                                    </p>
+
+                                    <p class="text-muted small white-text">
+                                        <i class="fas fa-sign-out-alt white-text"></i> Log out
+                                    </p>
+
                             </li>
                         </ul>
                     </li>
@@ -75,9 +76,7 @@
             <div class="container">
 
                 <div class="card ">
-                    <div class="card-header">
-                        Event Title
-                    </div>
+
                     <div class="card-body">
                         <!-- Heading -->
                         <div class="card mb-4 wow fadeIn">
@@ -196,22 +195,23 @@
                 </div>
             </div>
         </div>
+        <!--Footer-->
+        <footer class="page-footer text-center font-small wow fadeIn">
+
+            <!--Copyright-->
+            <div class="footer-copyright pt-2">
+                <strong>© 2018&nbspEventWright</strong>
+                <p>Made with&nbsp;
+                    <i class="fas fa-heart"></i>&nbsp by Jake, JD, Christian & Ben </a>
+                </p>
+            </div>
+            <!--/.Copyright-->
+
+        </footer>
+        <!--/.Footer-->
     </div>
 
-    <!--Footer-->
-    <footer class="page-footer text-center font-small wow fadeIn">
 
-        <!--Copyright-->
-        <div class="footer-copyright pt-2">
-            <strong>© 2018&nbspEventWright</strong>
-            <p>Made with&nbsp;
-                <i class="fas fa-heart"></i>&nbsp by Jake, JD, Christian & Ben </a>
-            </p>
-        </div>
-        <!--/.Copyright-->
-
-    </footer>
-    <!--/.Footer-->
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

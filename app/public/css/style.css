@@ -39,8 +39,8 @@ h3 {
   color: #2977d0;
 }
 
-i {
-  color: #2977d0;
+.fa-heart {
+  color: #ee3847;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
