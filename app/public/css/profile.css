@@ -52,6 +52,10 @@ h3 {
   color: black;
 }
 
+.pink-gradient {
+  background-color: #ff005d;
+}
+
 .btn-success {
   background-color: #00d49d !important;
 }
