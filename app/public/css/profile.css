@@ -7,11 +7,6 @@ body {
   padding-bottom: 60px;
 }
 
-@media (min-width: 768px) {
-  .view {
-    overflow: visible;
-  }
-}
 .navbar {
   z-index: 1;
 }
@@ -25,6 +20,18 @@ body {
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: white;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .info-card {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pink-gradient,
+  .green-gradient {
+    width: 100%;
   }
 }
 
@@ -47,6 +54,10 @@ h3 {
 
 .pink-gradient {
   background-color: #ff005d;
+}
+
+.green-gradient {
+  background-color: #00d49d;
 }
 
 .btn-success {
