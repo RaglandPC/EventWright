@@ -54,91 +54,82 @@
 <!-- Main Navigation -->
 
 <body>
-  <div class="view intro-2">
-    <div class="full-bg-img">
-      <!--Main layout-->
-      <div class="container h-100">
-        <div class="row align-items-center h-100">
-          <div class="col-md-12">
-            <div class="card p-5">
-              <div class="row clearfix">
-                <div class="col-md-4 float-left">
-                  <!-- Upload new pictures -->
-                  <div class="profile-userpic">
-                    <img src="../public/images/avatar.png" class="img-responsive" alt="">
-                  </div>
-                  <div class="text-center">
-                    <form class="md-form">
-                      <div class="file-field">
-                        <div class="btn btn-primary btn-sm">
-                          <input type="file">
-                        </div>
-                        <div class="file-path-wrapper">
-                          <input class="file-path validate" type="text" placeholder="Upload your file">
-                        </div>
-                      </div>
-                    </form>
-                    <!-- Upload new pictures -->
-                  </div>
-                </div>
-                <div class="col-md-8 float-right">
-                  <div class="caption caption-md">
-                    <i class="icon-globe theme-font hide"></i>
-                    <h3>Event Info</h3>
-                    <hr>
-                  </div>
-                  <!--Event info-->
-                  <form class="form-horizontal" role="form">
-                    <div class="col-lg-8">
-                      <div class="md-form">
-                        <i class="fa fa-user prefix"></i>
-                        <input type="text" id="eventName" class="form-control">
-                        <label for="eventName" class="font-weight-light">Event name</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="md-form">
-                        <i class="fas fa-map-marker-alt prefix"></i>
-                        <input type="text" id="location" class="form-control">
-                        <label for="location" class="font-weight-light">Loctation</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="md-form">
-                        <i class="fas fa-info-circle prefix"></i>
-                        <input type="text" id="description" class="form-control">
-                        <label for="description" class="font-weight-light">Description</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <button type="reset" class="btn btn-success btn-lg">
-                        <i class="fas fa-plus"></i>
-                        </i>&nbspCreate Event</button>
-                    </div>
-                </div>
-              </div>
 
+
+  <!--Main layout-->
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-md-12">
+        <div class="card p-5">
+          <div class="row clearfix">
+            <div class="col-md-4 float-left">
+              <!-- Upload new pictures -->
+              <div class="profile-userpic">
+                <img src="../public/images/avatar.png" class="img-responsive d-flex justify-content-center" alt="">
+              </div>
+              <div class="text-center">
+                <form class="md-form">
+                  <div class="file-field">
+                    <div class="btn btn-primary btn-sm">
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text" placeholder="Upload your file">
+                    </div>
+                  </div>
+                </form>
+                <!-- Upload new pictures -->
+              </div>
+            </div>
+            <div class="col-md-8 float-right">
+              <div class="caption caption-md">
+                <i class="icon-globe theme-font hide"></i>
+                <h3>Event Info</h3>
+                <hr>
+              </div>
+              <!--Event info-->
+              <form class="form-horizontal" role="form">
+                <div class="col-lg-12">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix"></i>
+                    <input type="text" id="eventName" class="form-control">
+                    <label for="eventName" class="font-weight-light">Event name</label>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="md-form">
+                    <i class="fas fa-map-marker-alt prefix"></i>
+                    <input type="text" id="location" class="form-control">
+                    <label for="location" class="font-weight-light">Loctation</label>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="md-form">
+                    <i class="fas fa-info-circle prefix"></i>
+                    <textarea class="form-control" type="textarea" id="message" placeholder="Description" maxlength="140" rows="7"></textarea>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <button type="submit" class="btn btn-success btn-lg">
+                    <i class="fas fa-plus"></i>
+                    </i>&nbspCreate Event</button>
+                </div>
             </div>
           </div>
 
         </div>
-
       </div>
-
 
     </div>
 
+  </div>
 
-  </div>
-  </div>
-  </div>
-  <!--Main layout-->
-  </div>
-  </div>
-  </div>
+
+
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small">
+  <footer class="page-footer text-center font-small fixed-bottom">
 
     <!--Copyright-->
     <div class="footer-copyright pt-2">

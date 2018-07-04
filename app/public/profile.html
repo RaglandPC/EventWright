@@ -54,126 +54,129 @@
 <!-- Main Navigation -->
 
 <body>
-  <div class="view intro-2">
-    <div class="full-bg-img">
-      <!--Main layout-->
-      <div class="container">
-        <div class="col-md-12 clearfix">
-          <div class="col-md-4 float-left">
-            <div class="panel light profile-sidebar-panel bordered">
-              <div class="profile-usertitle">
-                <div class="profile-usertitle-name">
-                  Hello, User </div>
-              </div>
-              <br>
-              <!-- Upload new pictures -->
-              <div class="profile-userpic">
-                <img src="../public/images/avatar.png" class="img-responsive" alt="">
-              </div>
-              <div class="text-center">
-                <form class="md-form">
-                  <div class="file-field">
-                    <div class="btn btn-primary btn-sm">
-                      <input type="file">
-                    </div>
-                    <div class="file-path-wrapper">
-                      <input class="file-path validate" type="text" placeholder="Upload your file">
-                    </div>
-                  </div>
-                </form>
-                <!-- Upload new pictures -->
-              </div>
 
-              <div class="profile-userbuttons">
-
-                <button type="button" class="btn btn-success  btn-lg">
-                  <i class="fas fa-plus"></i>&nbsp Create Event
-                </button>
-              </div>
-              <br>
+  <!--Main layout-->
+  <div class="container h-100 mt-5">
+    <div class="row h-100">
+      <div class="col-md-12 clearfix">
+        <div class="col-md-4 float-left">
+          <div class="card light profile-sidebar-card">
+            <div class="profile-usertitle">
+              <div class="profile-usertitle-name">
+                Hello, User </div>
             </div>
-          </div>
-          <div class="col-md-8 float-right">
-            <div class="panel light bordered">
-              <div class="panel-title tabbable-line">
-                <!--Personal info-->
-                <div class="caption caption-md">
-                  <i class="icon-globe theme-font hide"></i>
-                  <h3>Personal Info</h3>
-                  <hr>
+            <br>
+            <!-- Upload new pictures -->
+            <div class="profile-userpic">
+              <img src="../public/images/avatar.png" class="img-responsive d-flex justify-content-center" alt="">
+            </div>
+            <div class="text-center">
+              <form class="md-form">
+                <div class="file-field">
+                  <div class="btn btn-primary btn-sm">
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload your file">
+                  </div>
                 </div>
+              </form>
+              <!-- Upload new pictures -->
+            </div>
+
+            <div class="profile-userbuttons">
+
+              <button type="button" class="btn btn-success  btn-lg">
+                <i class="fas fa-plus"></i>&nbsp Create Event
+              </button>
+            </div>
+            <br>
+          </div>
+        </div>
+        <div class="col-md-8 float-right">
+          <div class="card profile-info">
+            <div class="card-body">
+              <!--Personal info-->
+              <div class="caption caption-md">
+                <i class="icon-globe theme-font hide"></i>
+                <h3>Personal Info</h3>
+                <hr>
               </div>
-              <div class="panel-body">
-                <form class="form-horizontal" role="form">
-                  <div class="col-lg-8">
-                    <div class="md-form">
-                      <i class="fa fa-user prefix"></i>
-                      <input type="text" id="first" class="form-control">
-                      <label for="first" class="font-weight-light">First name</label>
-                    </div>
+            </div>
+            <div class="card-body">
+              <form class="form-horizontal" role="form">
+                <div class="col-lg-8">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix"></i>
+                    <input type="text" id="first" class="form-control">
+                    <label for="first" class="font-weight-light">First name</label>
                   </div>
-                  <div class="col-lg-8">
-                    <div class="md-form">
-                      <i class="fa fa-user prefix"></i>
-                      <input type="text" id="last" class="form-control">
-                      <label for="last" class="font-weight-light">Last name</label>
-                    </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix"></i>
+                    <input type="text" id="last" class="form-control">
+                    <label for="last" class="font-weight-light">Last name</label>
                   </div>
-                  <div class="col-lg-8">
-                    <div class="md-form">
-                      <i class="fas fa-birthday-cake prefix"></i>
-                      <input type="text" id="age" class="form-control">
-                      <label for="age" class="font-weight-light">Age</label>
-                    </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="md-form">
+                    <i class="fas fa-birthday-cake prefix"></i>
+                    <input type="text" id="age" class="form-control">
+                    <label for="age" class="font-weight-light">Age</label>
                   </div>
-                  <div class="col-lg-8">
-                    <div class="md-form">
-                      <i class="fa fa-envelope prefix"></i>
-                      <input type="password" id="email" class="form-control">
-                      <label for="email" class="font-weight-light">Email</label>
-                    </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="md-form">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="password" id="email" class="form-control">
+                    <label for="email" class="font-weight-light">Email</label>
                   </div>
-                  <div class="col-lg-8">
-                    <div class="md-form">
-                      <i class="fa fa-lock prefix"></i>
-                      <input type="password" id="password" class="form-control" value="11111122333">
-                      <label for="password" class="font-weight-light" type="password">Password</label>
-                    </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="md-form">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="password" class="form-control" value="11111122333">
+                    <label for="password" class="font-weight-light" type="password">Password</label>
                   </div>
-                  <div class="col-lg-8">
-                    <div class="md-form">
-                      <i class="fa fa-lock prefix"></i>
-                      <input type="password" id="password" class="form-control" value="11111122333">
-                      <label for="password" class="font-weight-light" type="password">Confirm Password</label>
-                    </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="md-form">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="password" class="form-control" value="11111122333">
+                    <label for="password" class="font-weight-light" type="password">Confirm Password</label>
                   </div>
-                  <div class="form-group">
-                    <label class="col-md-8 control-label"></label>
-                    <div class="col-md-8">
-                      <!--Edit button-->
-                      <button type="reset" class="btn pink-gradient">
-                        <i class="fa fa-pen"></i>&nbspEdit</button>
-                      <!--Save Changes button-->
-                      <button type="reset" class="btn btn-success">
-                        <i class="fas fa-save"></i>
-                        </i>&nbspSave Changes</button>
-                    </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="md-form">
+                    <i class="fas fa-info-circle prefix"></i>
+                    <textarea class="form-control" type="textarea" id="bio" placeholder="Bio" maxlength="140" rows="7"></textarea>
+                    </span>
                   </div>
-                </form>
-                <!--Panel Body-->
-              </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-8 control-label"></label>
+                  <div class="col-md-8">
+                    <!--Edit button-->
+                    <button type="reset" class="btn pink-gradient">
+                      <i class="fa fa-pen"></i>&nbspEdit</button>
+                    <!--Save Changes button-->
+                    <button type="submit" class="btn btn-success">
+                      <i class="fas fa-save"></i>
+                      </i>&nbspSave Changes</button>
+                  </div>
+                </div>
+              </form>
+              <!--Panel Body-->
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Main layout-->
-  </div>
-  </div>
   </div>
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small">
+  <footer class="page-footer text-center font-small fixed-bottom mt-5">
 
     <!--Copyright-->
     <div class="footer-copyright pt-2">

@@ -1,15 +1,12 @@
 html,
-body,
-.view {
+body {
   height: 100%;
 }
 
-.view {
-  padding-top: 50px;
-  background: #e4e4e4; /* fallback for old browsers */
-
-  background-size: cover;
+body {
+  background-color: #ebebeb;
 }
+
 @media (min-width: 768px) {
   .view {
     overflow: visible;
