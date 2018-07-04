@@ -1,11 +1,10 @@
-html,
-body {
+html {
   height: 100%;
 }
 
 body {
   background-color: #ebebeb;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {
@@ -29,10 +28,6 @@ body {
   }
 }
 
-.card {
-  box-shadow: none;
-}
-
 .navbar-content {
   text-align: left;
 }
@@ -54,8 +49,23 @@ h3 {
   background-color: #ff005d;
 }
 
+.green-gradient {
+  background-color: #00d49d;
+}
+
+@media only screen and (max-width: 768px) {
+  .pink-gradient,
+  .green-gradient {
+    width: 100%;
+  }
+}
+
 .btn-success {
   background-color: #00d49d !important;
+}
+
+.fa-heart {
+  color: #ee3847;
 }
 
 .blue-gradient {

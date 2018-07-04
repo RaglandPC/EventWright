@@ -60,6 +60,10 @@ h3 {
   background-color: #00d49d;
 }
 
+.fa-heart {
+  color: #ee3847;
+}
+
 .btn-success {
   background-color: #00d49d !important;
 }
