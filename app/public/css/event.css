@@ -7,11 +7,6 @@ body {
   padding-bottom: 60px;
 }
 
-@media (min-width: 768px) {
-  .view {
-    overflow: visible;
-  }
-}
 .navbar {
   z-index: 1;
 }
@@ -25,6 +20,18 @@ body {
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: white;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .info-card {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pink-gradient,
+  .green-gradient {
+    width: 100%;
   }
 }
 
@@ -53,19 +60,12 @@ h3 {
   background-color: #00d49d;
 }
 
-@media only screen and (max-width: 768px) {
-  .pink-gradient,
-  .green-gradient {
-    width: 100%;
-  }
+.fa-heart {
+  color: #ee3847;
 }
 
 .btn-success {
   background-color: #00d49d !important;
-}
-
-.fa-heart {
-  color: #ee3847;
 }
 
 .blue-gradient {
@@ -109,40 +109,6 @@ h3 {
   width: 12px;
 }
 
-.add-project:hover {
-  color: #ffffff;
-}
-
-.header-top i {
-  color: #0e1a35;
-}
-
-.icon-info {
-  position: relative;
-}
-.navi i {
-  font-size: 20px;
-}
-.label.label-primary {
-  border-radius: 50%;
-  font-size: 9px;
-  left: 8px;
-  position: absolute;
-  top: -9px;
-}
-
-.icon-info .label {
-  border: 2px solid #ffffff;
-  font-weight: 500;
-  padding: 3px 5px;
-  text-align: center;
-}
-
-.header-top li {
-  display: inline-block;
-  text-align: center;
-}
-
 .header-top .dropdown-toggle {
   color: #5584ff;
 }
@@ -161,14 +127,6 @@ h3 {
 .profile-sidebar {
   width: 300px;
   margin-right: 20px;
-}
-
-.profile-content {
-  overflow: hidden;
-}
-
-.profile-sidebar-panel {
-  padding: 30px 0 0 !important;
 }
 
 .profile-userpic img {
@@ -198,19 +156,6 @@ h3 {
   margin-top: 10px;
 }
 
-.profile-userbuttons .btn {
-  margin-right: 5px;
-}
-
-.profile-userbuttons .btn:last-child {
-  margin-right: 0;
-}
-
-.profile-usermenu {
-  margin-top: 30px;
-  padding-bottom: 20px;
-}
-
 @media (max-width: 991px) {
   .profile-sidebar {
     float: none;
@@ -223,21 +168,4 @@ h3 {
   .profile-content {
     overflow: visible;
   }
-}
-
-/*panel*/
-.page-panel-fullscreen {
-  overflow: hidden;
-}
-
-.panel {
-  margin-top: 0;
-  margin-bottom: 25px;
-  padding: 0;
-  border-radius: 4px;
-}
-
-.panel.light {
-  padding: 12px 20px 15px;
-  background-color: #fff;
 }
