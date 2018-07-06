@@ -1,23 +1,23 @@
-.view {
-  background: #36d1dc; /* fallback for old browsers */
+html {
+  height: 100%;
+}
+
+body {
+  background: #396afc; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to top,
-    #623995,
-    #39aade
+    to bottom,
+    #2948ff,
+    #396afc
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to top,
-    #623995,
-    #39aade
+    to bottom,
+    #2948ff,
+    #396afc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-size: cover;
+  padding-bottom: 65px;
 }
-@media (min-width: 768px) {
-  .view {
-    overflow: visible;
-  }
-}
+
 .navbar {
   z-index: 1;
 }
