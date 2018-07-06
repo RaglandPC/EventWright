@@ -32,9 +32,9 @@ module.exports = function (sequelize, Sequelize) {
             type: Sequelize.DATE
         },
 
-        photo: {
-            type: Sequelize.TEXT
-        }
+        photo:{
+            type: Sequelize.BLOB
+        },
 
     });
 
