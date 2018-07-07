@@ -34,6 +34,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 .card {
   box-shadow: none;
 }
@@ -55,6 +56,10 @@ h3 {
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
   background-color: #2977d0; /* green */
   border-radius: 50%;
+=======
+h3 {
+  color: #4375b2;
+>>>>>>> 46d0e9bf45f0915ce0f91c5427962b0e407a6f99
 }
 
 /* Form */
