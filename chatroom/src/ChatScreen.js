@@ -4,6 +4,7 @@ import MessageList from './components/MessageList'
 import SendMessageForm from './components/SendMessageForm'
 import TypingIndicator from './components/TypingIndicator'
 import WhosOnlineList from './components/WhosOnlineList'
+require ('dotenv').config()
 
 class ChatScreen extends Component {
     constructor(props) {
@@ -33,7 +34,7 @@ class ChatScreen extends Component {
 
     componentDidMount() {
         const chatManager = new Chatkit.ChatManager({
-            instanceLocator: 'v1:us1:efa350e4-decd-4981-8da2-309dab33612f',
+            instanceLocator: process.env.instanceLocator,
             userId: this.props.currentUsername,
             tokenProvider: new Chatkit.TokenProvider({
                 url: 'http://localhost:3001/authenticate',

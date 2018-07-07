@@ -2,12 +2,13 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const Chatkit = require("pusher-chatkit-server")
+require ('dotenv').config()
 
 const app = express()
 
 const chatkit = new Chatkit.default({
-  instanceLocator: "v1:us1:efa350e4-decd-4981-8da2-309dab33612f",
-  key: "a1dac9b9-60be-42cd-913d-fad0dbb58966:ezU3SlBTgtZU4jtsr/7oN4j6NtmnzAvi8yAbXoMmzfo="
+  instanceLocator: process.env.instanceLocator,
+  key: process.env.key
 })
 
 app.use(bodyParser.urlencoded({ extended: false }))
