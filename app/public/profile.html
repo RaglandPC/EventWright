@@ -68,17 +68,15 @@
             <br>
             <!-- Upload new pictures -->
             <div class="profile-userpic">
-              <img src="../public/images/avatar.png" class="img-responsive d-flex justify-content-center" alt="">
+              <img id="blah" src="../public/images/avatar.png" alt="your image" class="img-responsive d-flex justify-content-center" alt="">
             </div>
             <div class="text-center">
               <form class="md-form">
                 <div class="file-field">
                   <div class="btn btn-primary btn-sm">
-                    <input type="file">
+                    <input required type="file" name="file" id="file" class="inputfile" onchange="sendImage();"  />
                   </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload your file">
-                  </div>
+                
                 </div>
               </form>
               <!-- Upload new pictures -->
