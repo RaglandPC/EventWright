@@ -27,7 +27,7 @@ console.log(password);
 /// Login for new user page////////////////
 
 function validateForm2() {
-
+    
     var email =  document.getElementById('email').value;
     if (email == "") {
         document.getElementById('status').innerText = "Email cannot be empty";
@@ -66,19 +66,42 @@ function validateForm2() {
 
 //img uplaod
 
-function readURL(input) {
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
+// function readURL(input) {
+//     if (input.files && input.files[0]) {
+//       var reader = new FileReader();
   
-      reader.onload = function (e) {
+//       reader.onload = function (e) {
+//         $('#blah')
+//           .attr('src', e.target.result);
+//       };
+  
+//       reader.readAsDataURL(input.files[0]);
+//     }
+//   }
+
+  File.prototype.convertToBase64 = function(callback){
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        callback(e.target.result);
         $('#blah')
           .attr('src', e.target.result);
-      };
-  
-      reader.readAsDataURL(input.files[0]);
-    }
-  }
+    };
+    reader.onerror = function(e) {
+        callback(null, e);
+    };        
+    reader.readAsDataURL(this);
+};
 
+$("#file").on('change',function(){
+    var selectedFile = this.files[0];
+    if (!selectedFile.name.match(/.(jpg|jpeg|png|gif)$/i)) {
+    }
+    else {
+        selectedFile.convertToBase64(function(base64){
+            console.log(base64);
+        })
+    }
+});
   /// Update protfolo page.
   function validateForm3() {
     var picture =  document.getElementById('file').value;
@@ -128,5 +151,5 @@ function readURL(input) {
         return false;
     }
     document.getElementById('status').innerText = "Sending...";
-    document.getElementById('submit2').submit();
+    document.getElementById('submit3').submit();
   }

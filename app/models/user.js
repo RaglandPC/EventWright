@@ -17,6 +17,9 @@ module.exports = function(sequelize, Sequelize) {
             type: Sequelize.STRING,
             notEmpty: true
         },
+        photo:{
+            type: Sequelize.BLOB
+        },
  
         username: {
             type: Sequelize.TEXT
