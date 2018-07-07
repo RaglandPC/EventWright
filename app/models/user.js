@@ -17,14 +17,10 @@ module.exports = function (sequelize, Sequelize) {
             type: Sequelize.STRING,
             notEmpty: true
         },
-<<<<<<< HEAD
         photo:{
             type: Sequelize.BLOB
         },
  
-=======
-
->>>>>>> f23ffe61e145b6f56a46e49a81adf944ae80848e
         username: {
             type: Sequelize.TEXT
         },
