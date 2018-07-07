@@ -1,0 +1,183 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #396afc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2948ff,
+    #396afc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2948ff,
+    #396afc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding-bottom: 65px;
+}
+
+.navbar {
+  z-index: 1;
+}
+.navbar {
+  background-color: white;
+  box-shadow: none;
+}
+.top-nav-collapse {
+  background-color: white;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .info-card {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pink-gradient,
+  .green-gradient {
+    width: 100%;
+  }
+}
+
+.navbar-content {
+  text-align: left;
+}
+
+.navbar .dropdown-menu a {
+  color: white !important;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: #3478ce;
+}
+
+.md-form .prefix.active {
+  color: black;
+}
+
+.pink-gradient {
+  background-color: #ff005d;
+}
+
+.green-gradient {
+  background-color: #00d49d;
+}
+
+.fa-heart {
+  color: #ee3847;
+}
+
+.btn-success {
+  background-color: #00d49d !important;
+}
+
+.blue-gradient {
+  background-image: linear-gradient(to bottom, #39aade 15%, #2977d0 100%);
+}
+
+.header-top img {
+  border-radius: 50%;
+  max-width: 48px !important;
+  width: 100%;
+}
+
+.add-event {
+  background: #5584ff none repeat scroll 0 0;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 27px 10px 27px;
+  position: relative;
+}
+
+.header-rightside .nav > li > a:focus,
+.header-rightside .nav > li > a:hover {
+  background: none;
+  text-decoration: none;
+}
+
+.add-project::before {
+  background: rgba(0, 0, 0, 0) url("../images/plus.png") no-repeat scroll 0 0;
+  content: "";
+  height: 12px;
+  left: 17px;
+  position: absolute;
+  top: 12px;
+  width: 12px;
+}
+
+.header-top .dropdown-toggle {
+  color: #5584ff;
+}
+
+.header-top .dropdown-menu {
+  border: medium none;
+  left: -85px;
+  padding: 5px;
+  background-color: #5584ff;
+  color: white;
+}
+
+/* Profile CSS */
+
+/*profile*/
+.profile-sidebar {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 45%;
+  height: 45%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .profile-sidebar {
+    float: none;
+    width: 100% !important;
+    margin: 0;
+  }
+  .profile-sidebar > .panel {
+    margin-bottom: 20px;
+  }
+  .profile-content {
+    overflow: visible;
+  }
+}
+
+/* Footer  */
+.page-footer {
+  background-color: #1c2331;
+  height: 65px;
+}

@@ -1,0 +1,68 @@
+/* Required height of parents of the Full Page Intro and Intro itself */
+html,
+body,
+.view {
+  height: 100%;
+}
+
+.card {
+  box-shadow: none;
+}
+
+.btn-secondary {
+  background: #5987e6 !important;
+  color: #fff !important;
+}
+
+.btn-white {
+  color: #2977d0 !important;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+.blue-gradient {
+  background-image: linear-gradient(to bottom, #39aade 15%, #2977d0 100%);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.h3 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(70, 18, 153);
+}
+
+.fa-heart {
+  color: #ee3847;
+}
+
+/* Navbar animation */
+.navbar {
+  background-color: rgb(#ffffff);
+}
+
+.top-nav-collapse {
+  background-color: #ffffff;
+}
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #ffffff;
+  }
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1c2331;
+}

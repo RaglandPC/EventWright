@@ -1,29 +1,29 @@
-.view {
-  background: #36d1dc; /* fallback for old browsers */
+html {
+  height: 100%;
+}
+
+body {
+  background: #396afc; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to top,
-    #5b86e5,
-    #36d1dc
+    to bottom,
+    #2948ff,
+    #396afc
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to top,
-    #5b86e5,
-    #36d1dc
+    to bottom,
+    #2948ff,
+    #396afc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-size: cover;
+  padding-bottom: 65px;
 }
-@media (min-width: 768px) {
-  .view {
-    overflow: visible;
-    margin-top: -56px;
-  }
-}
+
 .navbar {
   z-index: 1;
 }
 .navbar {
   background-color: white;
+  box-shadow: none;
 }
 .top-nav-collapse {
   background-color: white;
@@ -34,8 +34,32 @@
   }
 }
 
+<<<<<<< HEAD
+.card {
+  box-shadow: none;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: #2977d0;
+}
+
+.fa-heart {
+  color: #ee3847;
+}
+
+.blue-gradient {
+  background-image: linear-gradient(to bottom, #39aade 15%, #2977d0 100%);
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #2977d0; /* green */
+  border-radius: 50%;
+=======
 h3 {
   color: #4375b2;
+>>>>>>> 46d0e9bf45f0915ce0f91c5427962b0e407a6f99
 }
 
 /* Form */
@@ -105,7 +129,12 @@ steps-form-3 {
 .steps-form-3 .steps-row-3 .steps-step-3 .btn-circle-3 .fa {
   font-size: 1.7rem;
 }
-/* cricle placeholder */
+/* circle placeholder */
 .avatar-pic {
   width: 150px;
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1c2331;
 }
