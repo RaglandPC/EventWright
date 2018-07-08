@@ -21,8 +21,6 @@ module.exports = function (sequelize, Sequelize) {
             type: Sequelize.BLOB
         },
  
-
-        
         username: {
             type: Sequelize.TEXT
         },
