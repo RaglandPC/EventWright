@@ -129,6 +129,10 @@ h3 {
 
 /* Profile CSS */
 
+.main {
+  width: 960px;
+}
+
 /*profile*/
 .profile-sidebar {
   width: 300px;

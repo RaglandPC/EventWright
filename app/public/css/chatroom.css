@@ -16,8 +16,6 @@ body {
     #2948ff,
     #396afc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  padding-bottom: 60px;
 }
 
 .navbar {
@@ -139,7 +137,6 @@ h3 {
   margin: 0px;
 }
 .main-section {
-  width: 960px;
   background-color: #fff;
   margin: auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -274,6 +271,7 @@ h3 {
   background-color: #f6f6f6;
   position: relative;
 }
+
 .message {
   height: calc(100% - 68px);
   font-family: sans-serif;
@@ -391,10 +389,15 @@ h3 {
   cursor: pointer;
 }
 .upload-btn {
+  border: 0px;
+  padding: 8px 10px;
   position: relative;
   overflow: hidden;
-  display: inline-block;
   float: left;
+  color: #009ef7;
+  font-size: 18px;
+  background: #fff;
+  cursor: pointer;
 }
 .upload-btn .btn {
   border: 0px;
