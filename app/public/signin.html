@@ -258,7 +258,7 @@
                 <!--Form with header-->
                 <!--Form without header-->
                 <div class="card">
-                    <div class="card-body">
+                    <form id="signin" name="signin" method="post" action="/signin">
 
                         <!--Header-->
                         <div class="text-center">
@@ -269,21 +269,21 @@
                         <!--Body-->
                         <div class="md-form">
                             <i class="fa fa-envelope prefix"></i>
-                            <input type="text" id="email" class="form-control">
+                            <input required type="email" class="form-control" id="email" name="email">
                             <label for="email" class="font-weight-light">Your email</label>
                         </div>
 
                         <div class="md-form">
                             <i class="fa fa-lock prefix"></i>
-                            <input type="password" id="password" class="form-control">
+                            <input required type="password" class="form-control" name="password" id="password">
                             <label for="password" class="font-weight-light">Your password</label>
                         </div>
 
                         <div class="text-center">
-                            <a href="/profile.html" class="btn btn-primary blue-gradient" role="button">Sign In</a>
+                            <button class="btn btn-primary" type="submit2">Login</button>
                         </div>
 
-                    </div>
+                    </form>
 
                     <!--Footer-->
                     <div class="modal-footer">

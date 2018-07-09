@@ -24,7 +24,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="../public/index.html">
+      <a class="navbar-brand" href="/index.html">
         <img src="images/navbar_logo.png">
       </a>
 
@@ -32,13 +32,13 @@
         <ul class="list-inline header-top pull-right pt-2">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../public/images/avatar.png" alt="user">
+              <img id="blah" src="http://placehold.it/180" alt="your image" class="img-responsive d-flex justify-content-center" alt="user">
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li>
                 <div class="navbar-content"></div>
-                <a href="../public/index.html">
+                <a href="/index.html">
                   <i class="fas fa-sign-out-alt white-text"></i>
                   </i>Log out
                 </a>
@@ -67,8 +67,9 @@
             </div>
             <br>
             <!-- Upload new pictures -->
+            <form id="proflie" name="profile" method="post" action="/profile">
             <div class="profile-userpic">
-              <img id="blah" src="../public/images/avatar.png" alt="your image" class="img-responsive d-flex justify-content-center" alt="">
+              <img id="blah" src="http://placehold.it/180" alt="your image" class="img-responsive d-flex justify-content-center" alt="user">
             </div>
             <div class="text-center">
               <form class="md-form">
@@ -81,9 +82,10 @@
               </form>
               <!-- Upload new pictures -->
             </div>
+            </form>
 
             <div class="profile-userbuttons">
-              <a href=".//event.html" class="btn btn-success btn-lg" role="button">
+              <a href="./event.html" class="btn btn-success btn-lg" role="button">
                 <i class="fa fa-plus"></i>&nbspCreate Event</a>
             </div>
             <br>
@@ -97,7 +99,17 @@
                 <i class="icon-globe theme-font hide"></i>
                 <h3 class="text-center">Personal Info</h3>
               </div>
-              <form class="form-horizontal" role="form">
+              <form id="proflie" name="profile" method="post" action="/profile">
+                  <!-- Upload new pictures -->
+                </div>
+                <div class="col-lg-8">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix"></i>
+                    <input required type="text" class="form-control" id="first" name="firstname">
+                    <label for="inputFirst">First</label>
+                  </div>
+                </div>
+                
                 <div class="col-lg-8">
                   <div class="md-form">
                     <i class="fa fa-user prefix"></i>
@@ -115,21 +127,21 @@
                 <div class="col-lg-8">
                   <div class="md-form">
                     <i class="fa fa-envelope prefix"></i>
-                    <input type="password" id="email" class="form-control">
+                    <input type="email" id="email" class="form-control">
                     <label for="email" class="font-weight-light">Email</label>
                   </div>
                 </div>
                 <div class="col-lg-8">
                   <div class="md-form">
                     <i class="fa fa-lock prefix"></i>
-                    <input type="password" id="password" class="form-control" value="11111122333">
+                    <input type="password" id="password" class="form-control" value="">
                     <label for="password" class="font-weight-light" type="password">Password</label>
                   </div>
                 </div>
                 <div class="col-lg-8">
                   <div class="md-form">
                     <i class="fa fa-lock prefix"></i>
-                    <input type="password" id="password" class="form-control" value="11111122333">
+                    <input type="password" id="password" class="form-control" value="">
                     <label for="password" class="font-weight-light" type="password">Confirm Password</label>
                   </div>
                 </div>
@@ -148,7 +160,7 @@
                     <button type="reset" class="btn pink-gradient">
                       <i class="fa fa-pen"></i>&nbspEdit</button>
                     <!--Save Changes button-->
-                    <button type="submit" class="btn green-gradient">
+                    <button type="submit3" class="btn green-gradient" onClick="refreshPage()">
                       <i class="fas fa-save"></i>
                       </i>&nbspSave Changes</button>
                   </div>

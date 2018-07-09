@@ -25,10 +25,6 @@ module.exports = function (sequelize, Sequelize) {
             type: Sequelize.TEXT
         },
 
-        photo: {
-            type: Sequelize.BLOB
-        },
-
         about: {
             type: Sequelize.TEXT
         },

@@ -20,7 +20,7 @@ function validateForm() {
         return false;
     }
     document.getElementById('status').innerText = "Sending...";
-    document.getElementById('submit').submit();
+    document.getElementById('submit1').submit();
 console.log(password);
 }
 
@@ -54,14 +54,9 @@ function validateForm2() {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    var age =  document.getElementById('inputAge').value;
-    if (age == "") {
-        document.getElementById('status').innerText = "Subject cannot be empty";
-        return false;
-    }
+   
     document.getElementById('status').innerText = "Sending...";
     document.getElementById('submit2').submit();
-
 }
 
 //img uplaod
@@ -104,11 +99,29 @@ $("#file").on('change',function(){
 });
   /// Update protfolo page.
   function validateForm3() {
-    var picture =  document.getElementById('file').value;
-    if (picture == "") {
-        document.getElementById('status').innerText = "Subject cannot be empty";
-        return false;
-    }
+    File.prototype.convertToBase64 = function(callback){
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            callback(e.target.result);
+            $('#blah')
+              .attr('src', e.target.result);
+        };
+        reader.onerror = function(e) {
+            callback(null, e);
+        };        
+        reader.readAsDataURL(this);
+    };
+    
+    $("#file").on('change',function(){
+        var selectedFile = this.files[0];
+        if (!selectedFile.name.match(/.(jpg|jpeg|png|gif)$/i)) {
+        }
+        else {
+            selectedFile.convertToBase64(function(base64){
+                console.log(base64);
+            })
+        }
+    });
     var email =  document.getElementById('email').value;
     if (email == "") {
         document.getElementById('status').innerText = "Email cannot be empty";
@@ -135,21 +148,23 @@ $("#file").on('change',function(){
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    var age =  document.getElementById('inputAge').value;
+    var age =  document.getElementById('age').value;
     if (age == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
-    var city =  document.getElementById('inputCity').value;
-    if (city == "") {
-        document.getElementById('status').innerText = "Subject cannot be empty";
-        return false;
-    }
+    // var city =  document.getElementById('inputCity').value;
+    // if (city == "") {
+    //     document.getElementById('status').innerText = "Subject cannot be empty";
+    //     return false;
+    // }
     var bio =  document.getElementById('Bio').value;
     if (bio == "") {
         document.getElementById('status').innerText = "Subject cannot be empty";
         return false;
     }
     document.getElementById('status').innerText = "Sending...";
-    document.getElementById('submit3').submit();
+    document.getElementById('submit3').on("click", function(){
+        window.location.reload();
+    });
   }

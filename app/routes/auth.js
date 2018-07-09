@@ -7,21 +7,21 @@ module.exports = function (app, passport) {
     app.get('/signin', authController.signin);
 
     app.post('/signup', passport.authenticate('local-signup', {
-        successRedirect: '/chatroom',
+        successRedirect: '/profile',
         failureRedirect: '/signup',
         failureFlash: true
     }
     ));
 
     app.post('/signin', passport.authenticate('local-signin', {
-        successRedirect: '/chatroom',
+        successRedirect: '/profile',
         failureRedirect: '/signin',
         failureFlash: 'Invalid username or password.' 
     }
 
     ));
 
-    app.get('/chatroom', isLoggedIn, authController.dashboard);
+    app.get('/profile', isLoggedIn, authController.dashboard);
 
     app.get('/logout', authController.logout);
 
