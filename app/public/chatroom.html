@@ -15,7 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
-    <Link href="css/event.css" rel="stylesheet">
+    <Link href="css/chatroom.css" rel="stylesheet">
 </head>
 
 <!-- Main Navigation -->
@@ -67,30 +67,169 @@
 <!-- Main Navigation -->
 
 <body>
-    <div class="view intro-2">
-        <div class="full-bg-img">
-            <!--Main layout-->
-
-            <div class="container">
-
+    <!--Main layout-->
+    <div class="container h-100">
+        <div class="row h-100 d-flex align-items-center">
+            <div class="col-md-12">
+                <div class="main-section">
+                    <div class="head-section">
+                        <div class="headLeft-section">
+                            <div class="headLeft-sub">
+                                <form class=" form form-inline md-form form-sm">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="headRight-section">
+                            <div class="headRight-sub">
+                                <h3>Float Trip</h3>
+                                <small>Lorem ipsum dolor sit amet...</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-section">
+                        <div class="left-section mCustomScrollbar" data-mcs-theme="minimal-dark">
+                            <ul>
+                                <li>
+                                    <div class="chatList">
+                                        <div class="img">
+                                            <img src=".//images/avatar.png">
+                                        </div>
+                                        <div class="desc">
+                                            <h5>Pub Crawl</h5>
+                                            <small>Lorem ipsum dolor sit amet...</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="chatList">
+                                        <div class="img">
+                                            <img src=".//images/avatar.png">
+                                        </div>
+                                        <div class="desc">
+                                            <h5>Chiefs Game</h5>
+                                            <small>Lorem ipsum dolor sit amet...</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="active">
+                                    <div class="chatList">
+                                        <div class="img">
+                                            <img src=".//images/avatar.png">
+                                        </div>
+                                        <div class="desc">
+                                            <h5>Float Trip</h5>
+                                            <small>Lorem ipsum dolor sit amet...</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="chatList">
+                                        <div class="img">
+                                            <img src=".//images/avatar.png">
+                                        </div>
+                                        <div class="desc">
+                                            <h5>Sporting KC</h5>
+                                            <small>Lorem ipsum dolor sit amet...</small>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-section">
+                            <div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                <ul>
+                                    <li class="msg-left">
+                                        <div class="msg-left-sub">
+                                            <img src=".//images/avatar.png">
+                                            <div class="msg-desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                            <small>05:25 am</small>
+                                        </div>
+                                    </li>
+                                    <li class="msg-right">
+                                        <div class="msg-left-sub">
+                                            <img src=".//images/avatar.png">
+                                            <div class="msg-desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                            <small>05:25 am</small>
+                                        </div>
+                                    </li>
+                                    <li class="msg-day">
+                                        <small>Wednesday</small>
+                                    </li>
+                                    <li class="msg-left">
+                                        <div class="msg-left-sub">
+                                            <img src=".//images/avatar.png">
+                                            <div class="msg-desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                            </div>
+                                            <small>05:25 am</small>
+                                        </div>
+                                    </li>
+                                    <li class="msg-right">
+                                        <div class="msg-left-sub">
+                                            <img src=".//images/avatar.png">
+                                            <div class="msg-desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                            <small>05:25 am</small>
+                                        </div>
+                                    </li>
+                                    <li class="msg-left">
+                                        <div class="msg-left-sub">
+                                            <img src=".//images/avatar.png">
+                                            <div class="msg-desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                            </div>
+                                            <small>05:25 am</small>
+                                        </div>
+                                    </li>
+                                    <li class="msg-right">
+                                        <div class="msg-left-sub">
+                                            <img src=".//images/avatar.png">
+                                            <div class="msg-desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                            <small>05:25 am</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right-section-bottom">
+                                <div class="md-form">
+                                    <div class="upload-btn">
+                                        <input type="file" name="myfile" />
+                                    </div>
+                                    <input type="text" id="" placeholder="type here...">
+                                    <button class="btn-send">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-    </div>
-    <!--Footer-->
-    <footer class="page-footer text-center font-small wow fadeIn fixed-bottom">
 
-        <!--Copyright-->
-        <div class="footer-copyright pt-2">
-            <strong>© 2018&nbspEventWright</strong>
-            <p>Made with&nbsp;
-                <i class="fas fa-heart"></i>&nbsp by Jake, JD, Christian & Ben </a>
-            </p>
-        </div>
-        <!--/.Copyright-->
+        <!--Footer-->
+        <footer class="page-footer text-center font-small wow fadeIn fixed-bottom">
 
-    </footer>
-    <!--/.Footer-->
+            <!--Copyright-->
+            <div class="footer-copyright pt-2">
+                <strong>© 2018&nbspEventWright</strong>
+                <p>Made with&nbsp;
+                    <i class="fas fa-heart"></i>&nbsp by Jake, JD, Christian & Ben </a>
+                </p>
+            </div>
+            <!--/.Copyright-->
+
+        </footer>
+        <!--/.Footer-->
     </div>
 
 

@@ -1,20 +1,25 @@
 html,
-body,
-.view {
+body {
   height: 100%;
+  padding-bottom: 95px;
 }
 
-.view {
-  padding-top: 50px;
-  background: #3497f0; /* fallback for old browsers */
+body {
+  background: #396afc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2948ff,
+    #396afc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2948ff,
+    #396afc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-size: cover;
+  padding-bottom: 60px;
 }
-@media (min-width: 768px) {
-  .view {
-    overflow: visible;
-  }
-}
+
 .navbar {
   z-index: 1;
 }
@@ -30,32 +35,54 @@ body,
     background-color: white;
   }
 }
-
-.card {
-  box-shadow: none;
+@media only screen and (max-width: 768px) {
+  .info-card {
+    margin-top: 20px;
+  }
 }
 
-.profile-userpic img {
-  border-radius: none;
+@media only screen and (max-width: 768px) {
+  .pink-gradient,
+  .green-gradient {
+    width: 100%;
+  }
 }
 
 .navbar-content {
   text-align: left;
 }
 
-.header-top .dropdown-menu {
-  background-color: #2977d0;
-  color: white;
+.navbar .dropdown-menu a {
+  color: white !important;
 }
 
 h3 {
   font-family: "Raleway", sans-serif;
-  color: #4353b3;
+  color: #3478ce;
 }
 
-/* Footer color for sake of consistency with Navbar */
-.page-footer {
-  background-color: #1c2331;
+.md-form .prefix.active {
+  color: black;
+}
+
+.pink-gradient {
+  background-color: #ff005d;
+}
+
+.green-gradient {
+  background-color: #00d49d;
+}
+
+.fa-heart {
+  color: #ee3847;
+}
+
+.btn-success {
+  background-color: #00d49d !important;
+}
+
+.blue-gradient {
+  background-image: linear-gradient(to bottom, #39aade 15%, #2977d0 100%);
 }
 
 .header-top img {
@@ -90,175 +117,302 @@ h3 {
   width: 12px;
 }
 
-.add-project:hover {
-  color: #ffffff;
-}
-
-.header-top i {
-  color: #0e1a35;
-}
-
-.icon-info {
-  position: relative;
-}
-.navi i {
-  font-size: 20px;
-}
-.label.label-primary {
-  border-radius: 50%;
-  font-size: 9px;
-  left: 8px;
-  position: absolute;
-  top: -9px;
-}
-
-.icon-info .label {
-  border: 2px solid #ffffff;
-  font-weight: 500;
-  padding: 3px 5px;
-  text-align: center;
-}
-
-.header-top li {
-  display: inline-block;
-  text-align: center;
-}
-
 .header-top .dropdown-toggle {
-  color: #0e1a35;
+  color: #5584ff;
 }
 
 .header-top .dropdown-menu {
   border: medium none;
   left: -85px;
-  padding: 17px;
+  padding: 5px;
+  background-color: #5584ff;
+  color: white;
 }
 
-/* Profile Main Content */
+/* Chat Area */
 
-/***
-User Profile Sidebar by @keenthemes
-A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
-Licensed under MIT
-***/
-
-body {
-  background: #f1f3fa;
-}
-
-/* Profile container */
-.profile {
-  margin: 20px 0;
-}
-
-/* Profile sidebar */
-.profile-sidebar {
-  padding: 20px 0 10px 0;
-  background: #fff;
-  min-height: 500px;
-}
-
-.content-1 {
-  background-color: #ffffff;
-  min-height: 500px;
-}
-
-.content-2 {
-  margin-top: 20px;
-  background-color: #ffffff;
-  min-height: 200px;
-}
-
-.profile-userpic img {
-  float: none;
-  margin: 0 auto;
-  width: 50%;
-  height: 50%;
-  -webkit-border-radius: 50% !important;
-  -moz-border-radius: 50% !important;
-  border-radius: 50% !important;
-}
-
-.profile-usertitle {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.profile-usertitle-name {
-  color: #5a7391;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 7px;
-}
-
-.profile-usertitle-job {
-  text-transform: uppercase;
-  color: #5b9bd1;
+.main-section small {
   font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 15px;
+}
+.main-section h3,
+.main-section h5 {
+  margin: 0px;
+}
+.main-section {
+  width: 960px;
+  background-color: #fff;
+  margin: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.profile-userbuttons {
+.form {
+  margin: 0;
+}
+
+.head-section {
+  border-bottom: 1px solid #e6e6e6;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+}
+.headLeft-section {
+  width: calc(30% - 1px);
+  float: left;
+  border-right: 1px solid #e6e6e6;
+}
+.headLeft-sub {
+  padding: 15px;
   text-align: center;
-  margin-top: 10px;
+}
+.headLeft-sub input {
+  width: 60%;
+  border-radius: 0px;
+  border: 1px solid #e6e6e6;
+  padding: 7px;
+}
+.headLeft-sub button {
+  background: #009ef7;
+  color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 7px 15px;
+}
+.headRight-section {
+  width: 70%;
+  float: left;
+}
+.headRight-sub {
+  padding: 10px 15px 0px 15px;
 }
 
-.profile-userbuttons .btn {
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 6px 15px;
-  margin-right: 5px;
+.body-section {
+  clear: both;
+  overflow: hidden;
+  width: 100%;
 }
 
-.profile-userbuttons .btn:last-child {
-  margin-right: 0px;
+.left-section {
+  width: calc(30% - 1px);
+  float: left;
+  height: 500px;
+  border-right: 1px solid #e6e6e6;
+  background-color: #fff;
+  z-index: 1;
+  position: relative;
+}
+.left-section ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.left-section ul li {
+  padding: 15px 0px;
+  cursor: pointer;
+}
+.left-section ul li.active {
+  background: #009ef7;
+  color: #fff;
+  position: relative;
+}
+.mCustomScrollBox,
+.mCSB_container {
+  overflow: unset !important;
+}
+.left-section ul li.active .desc .time {
+  color: #fff;
+}
+.left-section ul li.active:before {
+  position: absolute;
+  content: "";
+
+  border: 5px solid #009ef7;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 0px 3px 3px 0px;
+}
+.left-section ul li.active:after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  right: 0px;
+  left: auto;
+  width: 100%;
+  top: 0px;
 }
 
-.profile-usermenu {
-  margin-top: 30px;
+.left-section .chatList {
+  overflow: hidden;
+}
+.left-section .chatList .img {
+  width: 60px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.left-section .chatList .img img {
+  width: 30px;
+  border-radius: 50%;
 }
 
-.profile-usermenu ul li {
-  border-bottom: 1px solid #f0f4f7;
-  list-style-type: none;
+.left-section .chatList .desc {
+  width: calc(100% - 60px);
+  float: left;
+  position: relative;
+}
+.left-section .chatList .desc h5 {
+  margin-top: 6px;
+  line-height: 5px;
+}
+.left-section .chatList .desc .time {
+  position: absolute;
+  right: 15px;
+  color: #c1c1c1;
+}
+.right-section {
+  width: 70%;
+  float: left;
+  height: 500px;
+  background-color: #f6f6f6;
+  position: relative;
+}
+.message {
+  height: calc(100% - 68px);
+  font-family: sans-serif;
+}
+.message ul {
+  padding: 0px;
+  list-style: none;
+  margin: 0px auto;
+  width: 90%;
+  overflow: hidden;
+}
+.message ul li {
+  position: relative;
+  width: 80%;
+  padding: 15px 0px;
+  clear: both;
+}
+.message ul li.msg-left {
+  float: left;
+}
+.message ul li.msg-left img {
+  position: absolute;
+  width: 40px;
+  bottom: 30px;
+}
+.message ul li.msg-left .msg-desc {
+  margin-left: 70px;
+  font-size: 12px;
+  background: #e8e8e8;
+  padding: 5px 10px;
+  border-radius: 5px 5px 5px 0px;
+  position: relative;
+}
+.message ul li.msg-left .msg-desc:before {
+  position: absolute;
+  content: "";
+  border: 10px solid transparent;
+  border-bottom-color: #e8e8e8;
+  bottom: 0px;
+  left: -10px;
+}
+.message ul li.msg-left small {
+  float: right;
+  color: #c1c1c1;
 }
 
-.profile-usermenu ul li:last-child {
-  border-bottom: none;
+.message ul li.msg-right {
+  float: right;
+}
+.message ul li.msg-right img {
+  position: absolute;
+  width: 40px;
+  right: 0px;
+  bottom: 30px;
+}
+.message ul li.msg-right .msg-desc {
+  margin-right: 70px;
+  font-size: 12px;
+  background: #cce5ff;
+  color: #004085;
+  padding: 5px 10px;
+  border-radius: 5px 5px 5px 0px;
+  position: relative;
+}
+.message ul li.msg-right .msg-desc:before {
+  position: absolute;
+  content: "";
+  border: 10px solid transparent;
+  border-bottom-color: #cce5ff;
+  bottom: 0px;
+  right: -10px;
+}
+.message ul li.msg-right small {
+  float: right;
+  color: #c1c1c1;
+  margin-right: 70px;
+}
+.message ul li.msg-day {
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  padding: 0px;
+  margin: 15px 0px;
+}
+.message ul li.msg-day small {
+  position: absolute;
+  top: -10px;
+  background: #f6f6f6;
+  color: #c1c1c1;
+  padding: 3px 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.right-section-bottom {
+  background: #fff;
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+}
+.right-section-bottom input {
+  border: 0px;
+  padding: 8px 5px;
+  width: calc(100% - 150px);
+}
+.right-section-bottom .btn-send {
+  border: 0px;
+  padding: 8px 10px;
+  float: right;
+  margin-right: 30px;
+  color: #009ef7;
+  font-size: 18px;
+  background: #fff;
+  cursor: pointer;
+}
+.upload-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+.upload-btn .btn {
+  border: 0px;
+  padding: 8px 10px;
+  color: #009ef7;
+  font-size: 18px;
+  background: #fff;
+  cursor: pointer;
+}
+.upload-btn input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 
-.profile-usermenu ul li a {
-  color: #93a3b5;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.profile-usermenu ul li a i {
-  margin-right: 8px;
-  font-size: 14px;
-}
-
-.profile-usermenu ul li a:hover {
-  background-color: #fafcfd;
-  color: #5b9bd1;
-}
-
-.profile-usermenu ul li.active {
-  border-bottom: none;
-}
-
-.profile-usermenu ul li.active a {
-  color: #5b9bd1;
-  background-color: #f6f9fb;
-  border-left: 2px solid #5b9bd1;
-  margin-left: -2px;
-}
-
-/* Profile Content */
-.profile-content {
-  padding: 20px;
-  background: rgb(236, 236, 236);
-  min-height: 500px;
+/* Footer  */
+.page-footer {
+  background-color: #1c2331;
 }
