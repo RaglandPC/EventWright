@@ -17,9 +17,21 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
 
+  // app.post("/profile", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../models/user.js"));
+  // });
+
   app.get("/signin", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/signin.html"));
   });
+
+  app.get("/event", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/event.html"));
+  });
+
+  app.post('/event', function (req, res) {
+    res.sendFile(path.join(__dirname, "../models/event.js"));
+  })
 
   app.get("/signup", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/signup.html"));

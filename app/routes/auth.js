@@ -23,6 +23,8 @@ module.exports = function (app, passport) {
 
     app.get('/profile', isLoggedIn, authController.dashboard);
 
+    // app.get('/event', isLoggedIn, authController.dashboard);
+
     app.get('/logout', authController.logout);
 
     function isLoggedIn(req, res, next) {
